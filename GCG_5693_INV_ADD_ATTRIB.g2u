@@ -1,0 +1,1753 @@
+Program.Sub.ScreenSU.Start
+Gui.fmInvAtt..Create
+Gui.fmInvAtt..Caption("Extended Inventory Attributes")
+Gui.fmInvAtt..Size(24030,8610)
+Gui.fmInvAtt..MinX(0)
+Gui.fmInvAtt..MinY(0)
+Gui.fmInvAtt..Position(0,0)
+Gui.fmInvAtt..BackColor(-2147483633)
+Gui.fmInvAtt..MousePointer(0)
+Gui.fmInvAtt..Event(UnLoad,fmInvAtt_UnLoad)
+Gui.fmInvAtt.lblPrtNo.Create(Label,"Part Number",True,1230,255,0,105,210,True,0,"Arial",8,-2147483633,0)
+Gui.fmInvAtt.lblPrtNo.FontStyle(True,False,False,False,False)
+Gui.fmInvAtt.lblLoc.Create(Label,"Loc",True,450,255,0,11010,210,True,0,"Arial",8,-2147483633,0)
+Gui.fmInvAtt.lblLoc.FontStyle(True,False,False,False,False)
+Gui.fmInvAtt.tbData.Create(Tab)
+Gui.fmInvAtt.tbData.Size(23745,7350)
+Gui.fmInvAtt.tbData.Position(90,585)
+Gui.fmInvAtt.tbData.Tabs(3)
+Gui.fmInvAtt.tbData.SetTab(0)
+Gui.fmInvAtt.tbData.Caption("Marketing")
+Gui.fmInvAtt.tbData.SetTab(1)
+Gui.fmInvAtt.tbData.Caption("Technical Specs")
+Gui.fmInvAtt.tbData.SetTab(2)
+Gui.fmInvAtt.tbData.Caption("Web Tech Data")
+Gui.fmInvAtt.GsMKT1.Create(GsGridControl)
+Gui.fmInvAtt.GsMKT1.Size(23640,1155)
+Gui.fmInvAtt.GsMKT1.Position(0,0)
+Gui.fmInvAtt.GsMKT1.Parent("tbData",0)
+Gui.fmInvAtt.GsTECH1.Create(GsGridControl)
+Gui.fmInvAtt.GsTECH1.Size(23640,1155)
+Gui.fmInvAtt.GsTECH1.Position(0,0)
+Gui.fmInvAtt.GsTECH1.Parent("tbData",1)
+Gui.fmInvAtt.GsWEB1.Create(GsGridControl)
+Gui.fmInvAtt.GsWEB1.Size(23640,1155)
+Gui.fmInvAtt.GsWEB1.Position(0,0)
+Gui.fmInvAtt.GsWEB1.Parent("tbData",2)
+Gui.fmInvAtt.GsMKT2.Create(GsGridControl)
+Gui.fmInvAtt.GsMKT2.Size(23640,1155)
+Gui.fmInvAtt.GsMKT2.Position(0,1155)
+Gui.fmInvAtt.GsMKT2.Parent("tbData",0)
+Gui.fmInvAtt.GsMkt3.Create(GsGridControl)
+Gui.fmInvAtt.GsMkt3.Size(23640,1155)
+Gui.fmInvAtt.GsMkt3.Position(0,2310)
+Gui.fmInvAtt.GsMkt3.Parent("tbData",0)
+Gui.fmInvAtt.GsMKT4.Create(GsGridControl)
+Gui.fmInvAtt.GsMKT4.Size(23640,1155)
+Gui.fmInvAtt.GsMKT4.Position(0,3465)
+Gui.fmInvAtt.GsMKT4.Parent("tbData",0)
+Gui.fmInvAtt.GsTECH2.Create(GsGridControl)
+Gui.fmInvAtt.GsTECH2.Size(23640,1155)
+Gui.fmInvAtt.GsTECH2.Position(0,1155)
+Gui.fmInvAtt.GsTECH2.Parent("tbData",1)
+Gui.fmInvAtt.GsTECH3.Create(GsGridControl)
+Gui.fmInvAtt.GsTECH3.Size(23640,1155)
+Gui.fmInvAtt.GsTECH3.Position(0,2310)
+Gui.fmInvAtt.GsTECH3.Parent("tbData",1)
+Gui.fmInvAtt.GsWEB2.Create(GsGridControl)
+Gui.fmInvAtt.GsWEB2.Size(23640,1155)
+Gui.fmInvAtt.GsWEB2.Position(0,1155)
+Gui.fmInvAtt.GsWEB2.Parent("tbData",2)
+Gui.fmInvAtt.GsMKT5.Create(GsGridControl)
+Gui.fmInvAtt.GsMKT5.Size(23640,1155)
+Gui.fmInvAtt.GsMKT5.Position(0,4620)
+Gui.fmInvAtt.GsMKT5.Parent("tbData",0)
+Gui.fmInvAtt.GsMKT6.Create(GsGridControl)
+Gui.fmInvAtt.GsMKT6.Size(23640,1155)
+Gui.fmInvAtt.GsMKT6.Position(0,5760)
+Gui.fmInvAtt.GsMKT6.Parent("tbData",0)
+Gui.fmInvAtt.GsTECH4.Create(GsGridControl)
+Gui.fmInvAtt.GsTECH4.Size(23640,1155)
+Gui.fmInvAtt.GsTECH4.Position(0,3465)
+Gui.fmInvAtt.GsTECH4.Parent("tbData",1)
+Gui.fmInvAtt.GsTECH5.Create(GsGridControl)
+Gui.fmInvAtt.GsTECH5.Size(23640,1155)
+Gui.fmInvAtt.GsTECH5.Position(0,4620)
+Gui.fmInvAtt.GsTECH5.Parent("tbData",1)
+Gui.fmInvAtt.GsWEB3.Create(GsGridControl)
+Gui.fmInvAtt.GsWEB3.Size(23640,1155)
+Gui.fmInvAtt.GsWEB3.Position(0,2325)
+Gui.fmInvAtt.GsWEB3.Parent("tbData",2)
+Gui.fmInvAtt.lblRev.Create(Label,"Rev",True,450,255,0,10020,210,True,0,"Arial",8,-2147483633,0)
+Gui.fmInvAtt.lblRev.FontStyle(True,False,False,False,False)
+Gui.fmInvAtt.lblDesc.Create(Label,"Description",True,1140,255,0,3960,210,True,0,"Arial",8,-2147483633,0)
+Gui.fmInvAtt.lblDesc.FontStyle(True,False,False,False,False)
+Gui.fmInvAtt.lblQTY.Create(Label,"Quantity On-Hand",True,1620,255,0,12000,210,True,0,"Arial",8,-2147483633,0)
+Gui.fmInvAtt.lblQTY.FontStyle(True,False,False,False,False)
+Gui.fmInvAtt.lblPN.Create(Label,"",True,2685,255,0,1230,210,True,0,"Arial",8,16777215,1)
+Gui.fmInvAtt.lblPN.BorderStyle(2)
+Gui.fmInvAtt.lblDes.Create(Label,"",True,4980,255,0,5025,210,True,0,"Arial",8,16777215,1)
+Gui.fmInvAtt.lblDes.BorderStyle(2)
+Gui.fmInvAtt.lblRv.Create(Label,"",True,480,255,0,10440,210,True,0,"Arial",8,16777215,1)
+Gui.fmInvAtt.lblRv.BorderStyle(2)
+Gui.fmInvAtt.lblLcn.Create(Label,"",True,450,255,0,11460,210,True,0,"Arial",8,16777215,1)
+Gui.fmInvAtt.lblLcn.BorderStyle(2)
+Gui.fmInvAtt.lblQnty.Create(Label,"",True,1485,255,0,13530,210,True,0,"Arial",8,16777215,1)
+Gui.fmInvAtt.lblQnty.BorderStyle(2)
+Gui.fmMX..Create
+Gui.fmMX..Caption("Inventory Extended Attribute Name Maintenance")
+Gui.fmMX..Size(8850,6780)
+Gui.fmMX..MinX(0)
+Gui.fmMX..MinY(0)
+Gui.fmMX..Position(0,0)
+Gui.fmMX..BackColor(-2147483633)
+Gui.fmMX..MousePointer(0)
+Gui.fmMX..Event(UnLoad,fmMX_UnLoad)
+Gui.fmMX.GsMX.Create(GsGridControl)
+Gui.fmMX.GsMX.Size(8565,6105)
+Gui.fmMX.GsMX.Position(45,90)
+Gui.fmMX.GsMX.Anchor(15)
+Gui.fmMX.GsMX.Event(CellValueChanged,GsMX_CellValueChanged)
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+'TJS, Oct 2019
+'Customer: National Patent Analytical Systems, Inc.
+'Business Case: Customer wants to consolidate all marketing and quoting information into GSS(Inventory Attributes) in order to make the quoting process faster
+'Associate Hooks: 10120 (Inventory Populate),10130 (Inventory Load Part), 10210 (Inventory Script 1 Button)
+'Passed Variables: 000007(Part No), 000008 (Rev), 000009 (Location), 000012 (Description), 000030 (On Hand Qty)
+
+F.Intrinsic.Control.Try
+V.Local.sMXHook.Declare
+
+F.ODBC.Connection!conts.OpenCompanyConnection
+
+'Collect custom hook for column name maintenance
+F.ODBC.Connection!conts.ExecuteAndReturn("select ID from HOOK_ASSOCIATION where SCRIPT_NAME = 'GCG_5693_INV_ADD_ATTRIB.g2u' and Right(ID,5) not in('10120','10130','10210')",V.Local.sMXHook)
+F.Intrinsic.Control.If(V.Ambient.ExecuteAndReturnEOF)
+	V.Local.sMXHook.Set("0000000")
+F.Intrinsic.Control.EndIf
+F.ODBC.Connection!conts.Close
+
+F.Intrinsic.Control.SelectCase(V.Caller.Hook)
+	F.Intrinsic.Control.Case(10120)'Inventory Populate
+		F.Intrinsic.UI.ChangeCallerProperty(V.Passed.000068,"LOCK",1)
+	F.Intrinsic.Control.Case(10130)'Inventory Load Part
+		F.Intrinsic.Control.If(V.Passed.000007.Trim,=,"")
+			F.Intrinsic.Control.End
+		F.Intrinsic.Control.Else	
+			V.Passed.000068.Set("Ext Attrib")
+			F.Intrinsic.UI.ChangeCallerProperty(V.Passed.000068,"LOCK",0)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.Case(10210)'Inventory Script 1 Button
+		F.Intrinsic.Control.CallSub(fmInvAtt)
+	F.Intrinsic.Control.Case(V.Local.sMXHook)
+		F.Intrinsic.Control.CallSub(MX)
+F.Intrinsic.Control.EndSelect
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(Error,"SubRoutine",V.Ambient.CurrentSubroutine,"eNumber",V.Ambient.ErrorNumber,"eDescription",V.Ambient.ErrorDescription)
+F.Intrinsic.Control.EndTry
+Program.Sub.Main.End
+
+Program.Sub.fmInvAtt.Start
+F.Intrinsic.Control.Try
+
+'Setting screen control values
+Gui.fmInvAtt.tbData.TabStop(True)
+Gui.fmInvAtt.tbData.SetFocus
+Gui.fmInvAtt.tbData.SetTab(0)
+
+Gui.fmInvAtt.lblPN.Caption(V.Passed.000007.Trim)
+Gui.fmInvAtt.lblRv.Caption(V.Passed.000008.Trim)
+Gui.fmInvAtt.lblLcn.Caption(V.Passed.000009.Trim)
+Gui.fmInvAtt.lblDes.Caption(V.Passed.000012.Trim)
+Gui.fmInvAtt.lblQnty.Caption(V.Passed.000030.Trim)
+gui.fmInvAtt.lblPN.Caption(V.Passed.000007.Trim)
+
+F.Intrinsic.Control.CallSub(Data)
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(Error,"SubRoutine",V.Ambient.CurrentSubroutine,"eNumber",V.Ambient.ErrorNumber,"eDescription",V.Ambient.ErrorDescription)
+F.Intrinsic.Control.EndTry
+Program.Sub.fmInvAtt.End
+
+Program.Sub.Data.Start
+F.Intrinsic.Control.Try
+V.Local.sPNPad.Declare
+V.Local.sPartRev.Declare
+V.Local.sSql.Declare
+V.Local.sAttr.Declare
+V.Local.sVal.Declare
+V.Local.iCnt.Declare
+V.Local.sAddRow.Declare
+
+'Setting part number with rev
+F.Intrinsic.String.RPad(V.Passed.000007.Trim," ",17,V.Local.sPNPad)
+F.Intrinsic.String.Build("{0}{1}",V.Local.sPNPad,V.Passed.000008.Trim,V.Local.sPartRev)
+
+F.ODBC.Connection!conts.OpenCompanyConnection
+
+'Collecting dynamic column names
+F.Data.Datatable.CreateFromSQL("dtNames","conts","Select RTRIM(SQL_NAME) as SQL_NAME,RTRIM(FRIENDLY_NAME) as FRIENDLY_NAME from GCG_5693_COL_NAMES",True)
+
+'|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||Start Marketing Data|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+F.Intrinsic.String.Build("select RTRIM(PART) as PART,RTRIM(LOCATION) as LOCATION,NSN,NAME_OEM,CONT_PN,SIM_PN,PART_TYPE,FAMILY,NP_APPR_STAT,OBS_PART,COMMENTS,DT_DRW_COMP,BOM_COMPLETE from GCG_5693_INV_MKT where PART = '{0}' and (LOCATION = '' or LOCATION IS NULL);",V.Local.sPartRev,V.Passed.000009.Trim,V.Local.sSQL)
+
+F.Data.DataTable.CreateFromSQL("dtMKT1","conts",V.Local.sSql,True)
+
+F.Intrinsic.Control.If(V.DataTable.dtMKT1.RowCount,<,1)
+	F.Data.DataTable.AddRow("dtMKT1","PART","","LOCATION","","NSN","","NAME_OEM","","CONT_PN","","SIM_PN","","PART_TYPE","","FAMILY","","NP_APPR_STAT","FALSE","OBS_PART","FALSE","COMMENTS","","DT_DRW_COMP","01/01/1900","BOM_COMPLETE","")
+	F.Data.DataTable.SetValue("dtMKT1",0,"PART",V.Local.sPartRev,"LOCATION",V.Passed.000009.Trim)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.String.Build("select RTRIM(PART) as PART,RTRIM(LOCATION) as LOCATION,DT_RTR_COMP,DT_SAR_PKG_COMP,DT_SAR_SUBM,DT_PROD_RUN_COMP,HI_CST_PART_DESC,NPAS_SOLE_SRC,COMP_SRC1,COMP_SRC1_PN,COMP_SRC2,COMP_SRC2_PN,COMP_SRC3 from GCG_5693_INV_MKT where PART = '{0}' and (LOCATION = '' or LOCATION IS NULL);",V.Local.sPartRev,V.Passed.000009.Trim,V.Local.sSQL)
+
+F.Data.DataTable.CreateFromSQL("dtMKT2","conts",V.Local.sSql,True)
+
+F.Intrinsic.Control.If(V.DataTable.dtMKT2.RowCount,<,1)
+	F.Data.DataTable.AddRow("dtMKT2","PART","","LOCATION","","DT_RTR_COMP","01/01/1900","DT_SAR_PKG_COMP","01/01/1900","DT_SAR_SUBM","01/01/1900","DT_PROD_RUN_COMP","01/01/1900","HI_CST_PART_DESC","","NPAS_SOLE_SRC","FALSE","COMP_SRC1","","COMP_SRC1_PN","","COMP_SRC2","","COMP_SRC2_PN","","COMP_SRC3","")
+	F.Data.DataTable.SetValue("dtMKT2",0,"PART",V.Local.sPartRev,"LOCATION",V.Passed.000009.Trim)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.String.Build("select RTRIM(PART) as PART,RTRIM(LOCATION) as LOCATION,COMP_SRC3_PN,COMP_SRC4,COMP_SRC4_PN,WPN_SYS1,WPN_SYS2,WPN_SYS3,WPN_SYS4,WPN_SYS5,WPN_SYS6,WPN_SYS7,WPN_SYS8 from GCG_5693_INV_MKT where PART = '{0}' and (LOCATION = '' or LOCATION IS NULL);",V.Local.sPartRev,V.Passed.000009.Trim,V.Local.sSQL)
+
+F.Data.DataTable.CreateFromSQL("dtMKT3","conts",V.Local.sSql,True)
+
+F.Intrinsic.Control.If(V.DataTable.dtMKT3.RowCount,<,1)
+	F.Data.DataTable.AddRow("dtMKT3","PART","","LOCATION","","COMP_SRC3_PN","","COMP_SRC4","","COMP_SRC4_PN","","WPN_SYS1","","WPN_SYS2","","WPN_SYS3","","WPN_SYS4","","WPN_SYS5","","WPN_SYS6","","WPN_SYS7","","WPN_SYS8","")
+	F.Data.DataTable.SetValue("dtMKT3",0,"PART",V.Local.sPartRev,"LOCATION",V.Passed.000009.Trim)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.String.Build("select RTRIM(PART) as PART,RTRIM(LOCATION) as LOCATION,WPN_SYS9,WPN_SYS10,WPN_SYS11,WPN_SYS12,WPN_SYS13,WPN_SYS14,WPN_SYS15,WPN_SYS16,WPN_SYS17,WPN_SYS18,WPN_SYS19 from GCG_5693_INV_MKT where PART = '{0}' and (LOCATION = '' or LOCATION IS NULL);",V.Local.sPartRev,V.Passed.000009.Trim,V.Local.sSQL)
+
+F.Data.DataTable.CreateFromSQL("dtMKT4","conts",V.Local.sSql,True)
+
+F.Intrinsic.Control.If(V.DataTable.dtMKT4.RowCount,<,1)
+	F.Data.DataTable.AddRow("dtMKT4","PART","","LOCATION","","WPN_SYS9","","WPN_SYS10","","WPN_SYS11","","WPN_SYS12","","WPN_SYS13","","WPN_SYS14","","WPN_SYS15","","WPN_SYS16","","WPN_SYS17","","WPN_SYS18","","WPN_SYS19","")
+	F.Data.DataTable.SetValue("dtMKT4",0,"PART",V.Local.sPartRev,"LOCATION",V.Passed.000009.Trim)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.String.Build("select RTRIM(PART) as PART,RTRIM(LOCATION) as LOCATION,WPN_SYS20,DT_PQDR1,PQDR1_DESC,DT_PQDR2,PQDR2_DESC,DT_PQDR3,PQDR3_DESC,DT_PQDR4,PQDR4_DESC,SHD_QUOTE,LST_QTE_PRICE from GCG_5693_INV_MKT where PART = '{0}' and (LOCATION = '' or LOCATION IS NULL);",V.Local.sPartRev,V.Passed.000009.Trim,V.Local.sSQL)
+
+F.Data.DataTable.CreateFromSQL("dtMKT5","conts",V.Local.sSql,True)
+
+F.Intrinsic.Control.If(V.DataTable.dtMKT5.RowCount,<,1)
+	F.Data.DataTable.AddRow("dtMKT5","PART","","LOCATION","","WPN_SYS20","","DT_PQDR1","01/01/1900","PQDR1_DESC","","DT_PQDR2","01/01/1900","PQDR2_DESC","","DT_PQDR3","01/01/1900","PQDR3_DESC","","DT_PQDR4","01/01/1900","PQDR4_DESC","","SHD_QUOTE","FALSE","LST_QTE_PRICE",0)
+	F.Data.DataTable.SetValue("dtMKT5",0,"PART",V.Local.sPartRev,"LOCATION",V.Passed.000009.Trim)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.String.Build("select RTRIM(PART) as PART,RTRIM(LOCATION) as LOCATION,MIN_QTY,FRCST_QTY_1YR,FRCST_QTY_3YR,MKT_USER_1,MKT_USER_2,MKT_USER_3,MKT_USER_4,MKT_USER_5,MKT_USER_6,MKT_USER_7,MKT_USER_8 from GCG_5693_INV_MKT where PART = '{0}' and (LOCATION = '' or LOCATION IS NULL);",V.Local.sPartRev,V.Passed.000009.Trim,V.Local.sSQL)
+
+F.Data.DataTable.CreateFromSQL("dtMKT6","conts",V.Local.sSql,True)
+
+F.Intrinsic.Control.If(V.DataTable.dtMKT6.RowCount,<,1)
+	F.Data.DataTable.AddRow("dtMKT6","PART","","LOCATION","","MIN_QTY",0,"FRCST_QTY_1YR",0,"FRCST_QTY_3YR",0,"MKT_USER_1","","MKT_USER_2","","MKT_USER_3","","MKT_USER_4","","MKT_USER_5","","MKT_USER_6","","MKT_USER_7","","MKT_USER_8","")
+	F.Data.DataTable.SetValue("dtMKT6",0,"PART",V.Local.sPartRev,"LOCATION",V.Passed.000009.Trim)
+F.Intrinsic.Control.EndIf
+'|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||End Marketing Data|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+'|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||Start Tech Data||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+F.Intrinsic.String.Build("select RTRIM(PART) as PART,RTRIM(LOCATION) as LOCATION,CL_PICKUP,CL_DROPOUT,CL_INRUSH_CRNT,CL_HLD_CRNT_SUPR,CL_QUANTITY,ENV_PROT,UNTHRD_HOLE_DIAM,MTG_FAC_TYP_QTY,FEATS_PROVIDED,MTG_FAC_PATTRN from GCG_5693_INV_TECH where PART = '{0}' and (LOCATION = '' or LOCATION IS NULL);",V.Local.sPartRev,V.Passed.000009.Trim,V.Local.sSQL)
+
+F.Data.DataTable.CreateFromSQL("dtTECH1","conts",V.Local.sSql,True)
+
+F.Intrinsic.Control.If(V.DataTable.dtTECH1.RowCount,<,1)
+	F.Data.DataTable.AddRow("dtTECH1","PART","","LOCATION","","CL_PICKUP","","CL_DROPOUT","","CL_INRUSH_CRNT","","CL_HLD_CRNT_SUPR","","CL_QUANTITY","","ENV_PROT","","UNTHRD_HOLE_DIAM","","MTG_FAC_TYP_QTY","","FEATS_PROVIDED","","MTG_FAC_PATTRN","")
+	F.Data.DataTable.SetValue("dtTECH1",0,"PART",V.Local.sPartRev,"LOCATION",V.Passed.000009.Trim)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.String.Build("select RTRIM(PART) as PART,RTRIM(LOCATION) as LOCATION,NOM_OP_CRNT_RTG_TYP,V_RTG_TYP_AT_SPC_TMP,MC_LD_CRNT_AT_MRV_DC,MC_LD_CRNT_AT_MRV_AC,MC_MAX_V_RTG_VDC,MC_MAX_V_RTG_VAC,INSUL_RESIST,CNTCTS_TO_GRND,BETWEEN_CNTCTS,COIL_TO_GRND from GCG_5693_INV_TECH where PART = '{0}' and (LOCATION = '' or LOCATION IS NULL);",V.Local.sPartRev,V.Passed.000009.Trim,V.Local.sSQL)
+
+F.Data.DataTable.CreateFromSQL("dtTECH2","conts",V.Local.sSql,True)
+
+F.Intrinsic.Control.If(V.DataTable.dtTECH2.RowCount,<,1)
+	F.Data.DataTable.AddRow("dtTECH2","PART","","LOCATION","","NOM_OP_CRNT_RTG_TYP","","V_RTG_TYP_AT_SPC_TMP","","MC_LD_CRNT_AT_MRV_DC","","MC_LD_CRNT_AT_MRV_AC","","MC_MAX_V_RTG_VDC","","MC_MAX_V_RTG_VAC","","INSUL_RESIST","","CNTCTS_TO_GRND","","BETWEEN_CNTCTS","","COIL_TO_GRND","")
+	F.Data.DataTable.SetValue("dtTECH2",0,"PART",V.Local.sPartRev,"LOCATION",V.Passed.000009.Trim)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.String.Build("select RTRIM(PART) as PART,RTRIM(LOCATION) as LOCATION,ALTITUDE,SHOCK_RESISTANCE,VIB_SINUSOIDAL,OVERALL_WEIGHT,OVERALL_LENGTH,OVERALL_WIDTH,OVERALL_HEIGHT,C2C_BT_MTG_PRL_LNGTH,C2C_BT_MTG_PRL_WIDTH,DUTY_TYPE from GCG_5693_INV_TECH where PART = '{0}' and (LOCATION = '' or LOCATION IS NULL);",V.Local.sPartRev,V.Passed.000009.Trim,V.Local.sSQL)
+
+F.Data.DataTable.CreateFromSQL("dtTECH3","conts",V.Local.sSql,True)
+
+F.Intrinsic.Control.If(V.DataTable.dtTECH3.RowCount,<,1)
+	F.Data.DataTable.AddRow("dtTECH3","PART","","LOCATION","","ALTITUDE","","SHOCK_RESISTANCE","","VIB_SINUSOIDAL","","OVERALL_WEIGHT","","OVERALL_LENGTH","","OVERALL_WIDTH","","OVERALL_HEIGHT","","C2C_BT_MTG_PRL_LNGTH","","C2C_BT_MTG_PRL_WIDTH","","DUTY_TYPE","")
+	F.Data.DataTable.SetValue("dtTECH3",0,"PART",V.Local.sPartRev,"LOCATION",V.Passed.000009.Trim)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.String.Build("select RTRIM(PART) as PART,RTRIM(LOCATION) as LOCATION,RESISTIVE,CONDUCTIVE,LAMP,INTERRUPT,OVERLOAD,V_DROP,OPERATE,RLEASE,TRANSFER,BOUNCE from GCG_5693_INV_TECH where PART = '{0}' and (LOCATION = '' or LOCATION IS NULL);",V.Local.sPartRev,V.Passed.000009.Trim,V.Local.sSQL)
+
+F.Data.DataTable.CreateFromSQL("dtTECH4","conts",V.Local.sSql,True)
+
+F.Intrinsic.Control.If(V.DataTable.dtTECH4.RowCount,<,1)
+	F.Data.DataTable.AddRow("dtTECH4","PART","","LOCATION","","RESISTIVE","","CONDUCTIVE","","LAMP","","INTERRUPT","","OVERLOAD","","V_DROP","","OPERATE","","RLEASE","","TRANSFER","","BOUNCE","")
+	F.Data.DataTable.SetValue("dtTECH4",0,"PART",V.Local.sPartRev,"LOCATION",V.Passed.000009.Trim)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.String.Build("select RTRIM(PART) as PART,RTRIM(LOCATION) as LOCATION,RUPTURE,MECHANICAL,TECH_USER_1,TECH_USER_2,TECH_USER_3,TECH_USER_4 from GCG_5693_INV_TECH where PART = '{0}' and (LOCATION = '' or LOCATION IS NULL);",V.Local.sPartRev,V.Passed.000009.Trim,V.Local.sSQL)
+
+F.Data.DataTable.CreateFromSQL("dtTECH5","conts",V.Local.sSql,True)
+
+F.Intrinsic.Control.If(V.DataTable.dtTECH5.RowCount,<,1)
+	F.Data.DataTable.AddRow("dtTECH5","PART","","LOCATION","","RUPTURE","","MECHANICAL","","TECH_USER_1","","TECH_USER_2","","TECH_USER_3","","TECH_USER_4","")
+	F.Data.DataTable.SetValue("dtTECH5",0,"PART",V.Local.sPartRev,"LOCATION",V.Passed.000009.Trim)
+F.Intrinsic.Control.EndIf
+'|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||End Tech Data||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+'|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||Start Web Data|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+F.Intrinsic.String.Build("select RTRIM(PART) as PART,RTRIM(LOCATION) as LOCATION,MAIN_BUS_TIE,STARTER_IGNITION,SOLENOID,REVERSE_CRNT_CUTOUT,CRNT_SENSING,UN_OV_V_SENSING,UN_OV_FREQ_SENSING,AUTOMATIC_CUTOUT,AC,DC,HERM_SEALED from GCG_5693_INV_WEB where PART = '{0}' and (LOCATION = '' or LOCATION IS NULL);",V.Local.sPartRev,V.Passed.000009.Trim,V.Local.sSQL)
+
+F.Data.DataTable.CreateFromSQL("dtWEB1","conts",V.Local.sSql,True)
+
+F.Intrinsic.Control.If(V.DataTable.dtWEB1.RowCount,<,1)
+	F.Data.DataTable.AddRow("dtWEB1","PART","","LOCATION","","MAIN_BUS_TIE","False","STARTER_IGNITION","False","SOLENOID","False","REVERSE_CRNT_CUTOUT","False","CRNT_SENSING","False","UN_OV_V_SENSING","False","UN_OV_FREQ_SENSING","False","AUTOMATIC_CUTOUT","False","AC","False","DC","False","HERM_SEALED","False")
+	F.Data.DataTable.SetValue("dtWEB1",0,"PART",V.Local.sPartRev,"LOCATION",V.Passed.000009.Trim)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.String.Build("select RTRIM(PART) as PART,RTRIM(LOCATION) as LOCATION,GASKET_SEALED,SP_SINGLE_POLE,DP_DOUBLE_POLE,TP_THREE_POLE,DT_DOUBLE_THROW,ST_SINGLE_THROW,NC_NORMALLY_CLOSED,NO_NORMALLY_OPEN,SB_SINGLE_BREAK,DB_DOUBLE_BREAK from GCG_5693_INV_WEB where PART = '{0}' and (LOCATION = '' or LOCATION IS NULL);",V.Local.sPartRev,V.Passed.000009.Trim,V.Local.sSQL)
+
+F.Data.DataTable.CreateFromSQL("dtWEB2","conts",V.Local.sSql,True)
+
+F.Intrinsic.Control.If(V.DataTable.dtWEB2.RowCount,<,1)
+	F.Data.DataTable.AddRow("dtWEB2","PART","","LOCATION","","GASKET_SEALED","False","SP_SINGLE_POLE","False","DP_DOUBLE_POLE","False","TP_THREE_POLE","False","DT_DOUBLE_THROW","False","ST_SINGLE_THROW","False","NC_NORMALLY_CLOSED","False","NO_NORMALLY_OPEN","False","SB_SINGLE_BREAK","False","DB_DOUBLE_BREAK","False")
+	F.Data.DataTable.SetValue("dtWEB2",0,"PART",V.Local.sPartRev,"LOCATION",V.Passed.000009.Trim)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.String.Build("select RTRIM(PART) as PART,RTRIM(LOCATION) as LOCATION,MAGNETIC_LATCHING,SIDESTABLE,CENTER_OFF,COIL_V_RATING_AC,COIL_V_RATING_DC,TERM_ARRANGEMENT,TEMP_RANGE,WEB_USER_1,WEB_USER_2,WEB_USER_3,WEB_USER_4 from GCG_5693_INV_WEB where PART = '{0}' and (LOCATION = '' or LOCATION IS NULL);",V.Local.sPartRev,V.Passed.000009.Trim,V.Local.sSQL)
+
+F.Data.DataTable.CreateFromSQL("dtWEB3","conts",V.Local.sSql,True)
+
+F.Intrinsic.Control.If(V.DataTable.dtWEB3.RowCount,<,1)
+	F.Data.DataTable.AddRow("dtWEB3","PART","","LOCATION","","MAGNETIC_LATCHING","False","SIDESTABLE","False","CENTER_OFF","False","COIL_V_RATING_AC","","COIL_V_RATING_DC","","TERM_ARRANGEMENT","","TEMP_RANGE","","WEB_USER_1","","WEB_USER_2","","WEB_USER_3","","WEB_USER_4","")
+	F.Data.DataTable.SetValue("dtWEB3",0,"PART",V.Local.sPartRev,"LOCATION",V.Passed.000009.Trim)
+F.Intrinsic.Control.EndIf
+'|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||End Web Data|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+F.ODBC.Connection!conts.Close
+
+F.Intrinsic.Control.CallSub(MKTGrids)
+F.Intrinsic.Control.CallSub(TECHGrids)
+F.Intrinsic.Control.CallSub(WEBGrids)
+F.Intrinsic.Control.CallSub(SetIcon)
+
+Gui.fmInvAtt..Show
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(Error,"SubRoutine",V.Ambient.CurrentSubroutine,"eNumber",V.Ambient.ErrorNumber,"eDescription",V.Ambient.ErrorDescription)
+F.Intrinsic.Control.EndTry
+Program.Sub.Data.End
+
+Program.Sub.MKTGrids.Start
+F.Intrinsic.Control.Try
+V.Local.iCNT.Declare
+V.Local.sColumns.Declare
+V.Local.sS_NAME.Declare
+V.Local.sF_NAME.Declare
+V.Local.bColExists.Declare
+V.Local.iOrig.Declare
+
+Gui.fmInvAtt.GsMKT1.SuspendLayout
+Gui.fmInvAtt.GsMKT2.SuspendLayout
+Gui.fmInvAtt.GsMKT3.SuspendLayout
+Gui.fmInvAtt.GsMKT4.SuspendLayout
+Gui.fmInvAtt.GsMKT5.SuspendLayout
+Gui.fmInvAtt.GsMKT6.SuspendLayout
+
+Gui.fmInvAtt.GsMKT1.AddGridviewFromDatatable("gvMKT1","dtMKT1")
+Gui.fmInvAtt.GsMKT1.MainView("gvMKT1")
+
+Gui.fmInvAtt.GsMKT1.SetGridviewProperty("gvMKT1","ShowGroupPanel",False)
+Gui.fmInvAtt.GsMKT1.SetGridviewProperty("gvMKT1","Editable",True)
+Gui.fmInvAtt.GsMKT1.SetGridviewProperty("gvMKT1","ReadOnly",False)
+
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","PART","Visible",False)
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","LOCATION","Visible",False)
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","NSN","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","NSN","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","NSN","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","NSN","HeaderBackColor","#FFD4FF")
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","NSN","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","NAME_OEM","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","NAME_OEM","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","NAME_OEM","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","NAME_OEM","HeaderBackColor","#FFD4FF")
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","NAME_OEM","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","CONT_PN","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","CONT_PN","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","CONT_PN","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","CONT_PN","HeaderBackColor","#FFD4FF")
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","CONT_PN","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","SIM_PN","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","SIM_PN","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","SIM_PN","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","SIM_PN","HeaderBackColor","#FFD4FF")
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","SIM_PN","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","PART_TYPE","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","PART_TYPE","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","PART_TYPE","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","PART_TYPE","HeaderBackColor","#FFD4FF")
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","PART_TYPE","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","Family","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","Family","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","Family","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","Family","HeaderBackColor","#FFD4FF")
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","Family","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","NP_APPR_STAT","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","NP_APPR_STAT","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","NP_APPR_STAT","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","NP_APPR_STAT","HeaderBackColor","#FFD4FF")
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","NP_APPR_STAT","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","OBS_PART","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","OBS_PART","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","OBS_PART","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","OBS_PART","HeaderBackColor","#FFD4FF")
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","OBS_PART","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","COMMENTS","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","COMMENTS","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","COMMENTS","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","COMMENTS","HeaderBackColor","#FFD4FF")
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","COMMENTS","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","DT_DRW_COMP","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","DT_DRW_COMP","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","DT_DRW_COMP","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","DT_DRW_COMP","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","DT_DRW_COMP","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","BOM_COMPLETE","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","BOM_COMPLETE","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","BOM_COMPLETE","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","BOM_COMPLETE","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","BOM_COMPLETE","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","COMMENTS","Width",200)
+
+Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1","DT_DRW_COMP","DisplayCustomDatetime",d)
+
+'Setting dynamic column captions - Rinse and repeat for all gridviews
+V.Local.sColumns.Set(V.DataTable.dtMKT1.FieldNames)
+F.Intrinsic.String.Split(V.Local.sColumns.UCase,"*!*",V.Local.sColumns)
+V.Local.iOrig.Set(V.Local.sColumns.UBound)
+F.Intrinsic.Control.For(V.Local.iCNT,0,V.DataTable.dtNames.RowCount--,1)
+F.Intrinsic.String.Build("{0}",V.DataTable.dtNames(V.Local.iCNT).SQL_NAME!FieldValTrim,V.Local.sS_NAME)
+F.Intrinsic.String.Build("{0}",V.DataTable.dtNames(V.Local.iCNT).FRIENDLY_NAME!FieldValTrim,V.Local.sF_NAME)
+	F.Intrinsic.Variable.RemoveArrayElementByValue(V.Local.sColumns,V.Local.sS_NAME.UCase,V.Local.sColumns)
+	F.Intrinsic.Control.If(V.Local.iOrig,>,V.Local.sColumns.UBound)
+		V.Local.iOrig.Set(V.Local.sColumns.UBound)
+		F.Intrinsic.Control.If(V.Local.sF_NAME,<>,"")
+			Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1",V.Local.sS_NAME,"Caption",V.Local.sF_NAME)
+		F.Intrinsic.Control.Else
+			Gui.fmInvAtt.GsMKT1.SetColumnProperty("gvMKT1",V.Local.sS_NAME,"Caption",V.Local.sS_NAME)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Next(V.Local.iCNT)
+V.Local.sColumns.Redim(0,0)
+
+Gui.fmInvAtt.GsMKT2.AddGridviewFromDatatable("gvMKT2","dtMKT2")
+Gui.fmInvAtt.GsMKT2.MainView("gvMKT2")
+
+Gui.fmInvAtt.GsMKT2.SetGridviewProperty("gvMKT2","ShowGroupPanel",False)
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","PART","Visible",False)
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","LOCATION","Visible",False)
+Gui.fmInvAtt.GsMKT2.SetGridviewProperty("gvMKT2","Editable",True)
+Gui.fmInvAtt.GsMKT2.SetGridviewProperty("gvMKT2","ReadOnly",False)
+
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","DT_RTR_COMP","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","DT_RTR_COMP","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","DT_RTR_COMP","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","DT_RTR_COMP","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","DT_RTR_COMP","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","DT_SAR_PKG_COMP","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","DT_SAR_PKG_COMP","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","DT_SAR_PKG_COMP","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","DT_SAR_PKG_COMP","HeaderBackColor","#FFD4FF")
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","DT_SAR_PKG_COMP","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","DT_SAR_SUBM","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","DT_SAR_SUBM","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","DT_SAR_SUBM","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","DT_SAR_SUBM","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","DT_SAR_SUBM","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","DT_PROD_RUN_COMP","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","DT_PROD_RUN_COMP","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","DT_PROD_RUN_COMP","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","DT_PROD_RUN_COMP","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","DT_PROD_RUN_COMP","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","HI_CST_PART_DESC","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","HI_CST_PART_DESC","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","HI_CST_PART_DESC","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","HI_CST_PART_DESC","HeaderBackColor","#FFD4FF")
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","HI_CST_PART_DESC","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","NPAS_SOLE_SRC","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","NPAS_SOLE_SRC","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","NPAS_SOLE_SRC","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","NPAS_SOLE_SRC","HeaderBackColor","#FFD4FF")
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","NPAS_SOLE_SRC","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","COMP_SRC1","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","COMP_SRC1","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","COMP_SRC1","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","COMP_SRC1","HeaderBackColor","#2AFFFF")
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","COMP_SRC1","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","COMP_SRC1_PN","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","COMP_SRC1_PN","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","COMP_SRC1_PN","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","COMP_SRC1_PN","HeaderBackColor","#2AFFFF")
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","COMP_SRC1_PN","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","COMP_SRC2","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","COMP_SRC2","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","COMP_SRC2","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","COMP_SRC2","HeaderBackColor","#2AFFFF")
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","COMP_SRC2","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","COMP_SRC2_PN","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","COMP_SRC2_PN","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","COMP_SRC2_PN","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","COMP_SRC2_PN","HeaderBackColor","#2AFFFF")
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","COMP_SRC2_PN","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","COMP_SRC3","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","COMP_SRC3","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","COMP_SRC3","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","COMP_SRC3","HeaderBackColor","#2AFFFF")
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","COMP_SRC3","HeaderForeColor","#000000")
+
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","DT_RTR_COMP","DisplayCustomDatetime",d)
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","DT_SAR_PKG_COMP","DisplayCustomDatetime",d)
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","DT_SAR_SUBM","DisplayCustomDatetime",d)
+Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2","DT_PROD_RUN_COMP","DisplayCustomDatetime",d)
+
+V.Local.sColumns.Set(V.DataTable.dtMKT2.FieldNames)
+F.Intrinsic.String.Split(V.Local.sColumns.UCase,"*!*",V.Local.sColumns)
+V.Local.iOrig.Set(V.Local.sColumns.UBound)
+F.Intrinsic.Control.For(V.Local.iCNT,0,V.DataTable.dtNames.RowCount--,1)
+F.Intrinsic.String.Build("{0}",V.DataTable.dtNames(V.Local.iCNT).SQL_NAME!FieldValTrim,V.Local.sS_NAME)
+F.Intrinsic.String.Build("{0}",V.DataTable.dtNames(V.Local.iCNT).FRIENDLY_NAME!FieldValTrim,V.Local.sF_NAME)
+	F.Intrinsic.Variable.RemoveArrayElementByValue(V.Local.sColumns,V.Local.sS_NAME.UCase,V.Local.sColumns)
+	F.Intrinsic.Control.If(V.Local.iOrig,>,V.Local.sColumns.UBound)
+		V.Local.iOrig.Set(V.Local.sColumns.UBound)
+		F.Intrinsic.Control.If(V.Local.sF_NAME,<>,"")
+			Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2",V.Local.sS_NAME,"Caption",V.Local.sF_NAME)
+		F.Intrinsic.Control.Else
+			Gui.fmInvAtt.GsMKT2.SetColumnProperty("gvMKT2",V.Local.sS_NAME,"Caption",V.Local.sS_NAME)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Next(V.Local.iCNT)
+V.Local.sColumns.Redim(0,0)
+
+Gui.fmInvAtt.GsMKT3.AddGridviewFromDatatable("gvMKT3","dtMKT3")
+Gui.fmInvAtt.GsMKT3.MainView("gvMKT3")
+
+Gui.fmInvAtt.GsMKT3.SetGridviewProperty("gvMKT3","ShowGroupPanel",False)
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","PART","Visible",False)
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","LOCATION","Visible",False)
+Gui.fmInvAtt.GsMKT3.SetGridviewProperty("gvMKT3","Editable",True)
+Gui.fmInvAtt.GsMKT3.SetGridviewProperty("gvMKT3","ReadOnly",False)
+
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","COMP_SRC3_PN","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","COMP_SRC3_PN","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","COMP_SRC3_PN","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","COMP_SRC3_PN","HeaderBackColor","#2AFFFF")
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","COMP_SRC3_PN","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","COMP_SRC4","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","COMP_SRC4","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","COMP_SRC4","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","COMP_SRC4","HeaderBackColor","#2AFFFF")
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","COMP_SRC4","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","COMP_SRC4_PN","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","COMP_SRC4_PN","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","COMP_SRC4_PN","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","COMP_SRC4_PN","HeaderBackColor","#2AFFFF")
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","COMP_SRC4_PN","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","WPN_SYS1","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","WPN_SYS1","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","WPN_SYS1","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","WPN_SYS1","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","WPN_SYS1","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","WPN_SYS2","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","WPN_SYS2","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","WPN_SYS2","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","WPN_SYS2","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","WPN_SYS2","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","WPN_SYS3","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","WPN_SYS3","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","WPN_SYS3","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","WPN_SYS3","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","WPN_SYS3","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","WPN_SYS4","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","WPN_SYS4","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","WPN_SYS4","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","WPN_SYS4","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","WPN_SYS4","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","WPN_SYS5","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","WPN_SYS5","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","WPN_SYS5","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","WPN_SYS5","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","WPN_SYS5","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","WPN_SYS6","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","WPN_SYS6","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","WPN_SYS6","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","WPN_SYS6","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","WPN_SYS6","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","WPN_SYS7","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","WPN_SYS7","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","WPN_SYS7","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","WPN_SYS7","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","WPN_SYS7","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","WPN_SYS8","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","WPN_SYS8","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","WPN_SYS8","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","WPN_SYS8","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3","WPN_SYS8","HeaderForeColor","#000000")
+
+V.Local.sColumns.Set(V.DataTable.dtMKT3.FieldNames)
+F.Intrinsic.String.Split(V.Local.sColumns.UCase,"*!*",V.Local.sColumns)
+V.Local.iOrig.Set(V.Local.sColumns.UBound)
+F.Intrinsic.Control.For(V.Local.iCNT,0,V.DataTable.dtNames.RowCount--,1)
+F.Intrinsic.String.Build("{0}",V.DataTable.dtNames(V.Local.iCNT).SQL_NAME!FieldValTrim,V.Local.sS_NAME)
+F.Intrinsic.String.Build("{0}",V.DataTable.dtNames(V.Local.iCNT).FRIENDLY_NAME!FieldValTrim,V.Local.sF_NAME)
+	F.Intrinsic.Variable.RemoveArrayElementByValue(V.Local.sColumns,V.Local.sS_NAME.UCase,V.Local.sColumns)
+	F.Intrinsic.Control.If(V.Local.iOrig,>,V.Local.sColumns.UBound)
+		V.Local.iOrig.Set(V.Local.sColumns.UBound)
+		F.Intrinsic.Control.If(V.Local.sF_NAME,<>,"")
+			Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3",V.Local.sS_NAME,"Caption",V.Local.sF_NAME)
+		F.Intrinsic.Control.Else
+			Gui.fmInvAtt.GsMKT3.SetColumnProperty("gvMKT3",V.Local.sS_NAME,"Caption",V.Local.sS_NAME)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Next(V.Local.iCNT)
+V.Local.sColumns.Redim(0,0)
+
+Gui.fmInvAtt.GsMKT4.AddGridviewFromDatatable("gvMKT4","dtMKT4")
+Gui.fmInvAtt.GsMKT4.MainView("gvMKT4")
+
+Gui.fmInvAtt.GsMKT4.SetGridviewProperty("gvMKT4","ShowGroupPanel",False)
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","PART","Visible",False)
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","LOCATION","Visible",False)
+Gui.fmInvAtt.GsMKT4.SetGridviewProperty("gvMKT4","Editable",True)
+Gui.fmInvAtt.GsMKT4.SetGridviewProperty("gvMKT4","ReadOnly",False)
+
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS9","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS9","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS9","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS9","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS9","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS10","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS10","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS10","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS10","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS10","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS11","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS11","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS11","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS11","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS11","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS12","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS12","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS12","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS12","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS12","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS13","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS13","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS13","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS13","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS13","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS14","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS14","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS14","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS14","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS14","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS15","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS15","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS15","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS15","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS15","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS16","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS16","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS16","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS16","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS16","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS17","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS17","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS17","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS17","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS17","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS18","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS18","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS18","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS18","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS18","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS19","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS19","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS19","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS19","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4","WPN_SYS19","HeaderForeColor","#000000")
+
+V.Local.sColumns.Set(V.DataTable.dtMKT4.FieldNames)
+F.Intrinsic.String.Split(V.Local.sColumns.UCase,"*!*",V.Local.sColumns)
+V.Local.iOrig.Set(V.Local.sColumns.UBound)
+F.Intrinsic.Control.For(V.Local.iCNT,0,V.DataTable.dtNames.RowCount--,1)
+F.Intrinsic.String.Build("{0}",V.DataTable.dtNames(V.Local.iCNT).SQL_NAME!FieldValTrim,V.Local.sS_NAME)
+F.Intrinsic.String.Build("{0}",V.DataTable.dtNames(V.Local.iCNT).FRIENDLY_NAME!FieldValTrim,V.Local.sF_NAME)
+	F.Intrinsic.Variable.RemoveArrayElementByValue(V.Local.sColumns,V.Local.sS_NAME.UCase,V.Local.sColumns)
+	F.Intrinsic.Control.If(V.Local.iOrig,>,V.Local.sColumns.UBound)
+		V.Local.iOrig.Set(V.Local.sColumns.UBound)
+		F.Intrinsic.Control.If(V.Local.sF_NAME,<>,"")
+			Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4",V.Local.sS_NAME,"Caption",V.Local.sF_NAME)
+		F.Intrinsic.Control.Else
+			Gui.fmInvAtt.GsMKT4.SetColumnProperty("gvMKT4",V.Local.sS_NAME,"Caption",V.Local.sS_NAME)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Next(V.Local.iCNT)
+V.Local.sColumns.Redim(0,0)
+
+Gui.fmInvAtt.GsMKT5.AddGridviewFromDatatable("gvMKT5","dtMKT5")
+Gui.fmInvAtt.GsMKT5.MainView("gvMKT5")
+
+Gui.fmInvAtt.GsMKT5.SetGridviewProperty("gvMKT5","ShowGroupPanel",False)
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","PART","Visible",False)
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","LOCATION","Visible",False)
+Gui.fmInvAtt.GsMKT5.SetGridviewProperty("gvMKT5","Editable",True)
+Gui.fmInvAtt.GsMKT5.SetGridviewProperty("gvMKT5","ReadOnly",False)
+
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","WPN_SYS20","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","WPN_SYS20","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","WPN_SYS20","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","WPN_SYS20","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","WPN_SYS20","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","DT_PQDR1","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","DT_PQDR1","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","DT_PQDR1","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","DT_PQDR1","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","DT_PQDR1","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","PQDR1_DESC","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","PQDR1_DESC","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","PQDR1_DESC","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","PQDR1_DESC","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","PQDR1_DESC","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","DT_PQDR2","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","DT_PQDR2","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","DT_PQDR2","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","DT_PQDR2","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","DT_PQDR2","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","PQDR2_DESC","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","PQDR2_DESC","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","PQDR2_DESC","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","PQDR2_DESC","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","PQDR2_DESC","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","DT_PQDR3","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","DT_PQDR3","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","DT_PQDR3","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","DT_PQDR3","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","DT_PQDR3","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","PQDR3_DESC","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","PQDR3_DESC","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","PQDR3_DESC","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","PQDR3_DESC","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","PQDR3_DESC","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","DT_PQDR4","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","DT_PQDR4","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","DT_PQDR4","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","DT_PQDR4","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","DT_PQDR4","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","PQDR4_DESC","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","PQDR4_DESC","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","PQDR4_DESC","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","PQDR4_DESC","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","PQDR4_DESC","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","SHD_QUOTE","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","SHD_QUOTE","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","SHD_QUOTE","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","SHD_QUOTE","HeaderBackColor","#FFD4FF")
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","SHD_QUOTE","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","LST_QTE_PRICE","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","LST_QTE_PRICE","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","LST_QTE_PRICE","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","LST_QTE_PRICE","HeaderBackColor","#FFD4FF")
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","LST_QTE_PRICE","HeaderForeColor","#000000")
+
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","DT_PQDR1","DisplayCustomDatetime",d)
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","DT_PQDR2","DisplayCustomDatetime",d)
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","DT_PQDR3","DisplayCustomDatetime",d)
+Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5","DT_PQDR4","DisplayCustomDatetime",d)
+
+V.Local.sColumns.Set(V.DataTable.dtMKT5.FieldNames)
+F.Intrinsic.String.Split(V.Local.sColumns.UCase,"*!*",V.Local.sColumns)
+V.Local.iOrig.Set(V.Local.sColumns.UBound)
+F.Intrinsic.Control.For(V.Local.iCNT,0,V.DataTable.dtNames.RowCount--,1)
+F.Intrinsic.String.Build("{0}",V.DataTable.dtNames(V.Local.iCNT).SQL_NAME!FieldValTrim,V.Local.sS_NAME)
+F.Intrinsic.String.Build("{0}",V.DataTable.dtNames(V.Local.iCNT).FRIENDLY_NAME!FieldValTrim,V.Local.sF_NAME)
+	F.Intrinsic.Variable.RemoveArrayElementByValue(V.Local.sColumns,V.Local.sS_NAME.UCase,V.Local.sColumns)
+	F.Intrinsic.Control.If(V.Local.iOrig,>,V.Local.sColumns.UBound)
+		V.Local.iOrig.Set(V.Local.sColumns.UBound)
+		F.Intrinsic.Control.If(V.Local.sF_NAME,<>,"")
+			Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5",V.Local.sS_NAME,"Caption",V.Local.sF_NAME)
+		F.Intrinsic.Control.Else
+			Gui.fmInvAtt.GsMKT5.SetColumnProperty("gvMKT5",V.Local.sS_NAME,"Caption",V.Local.sS_NAME)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Next(V.Local.iCNT)
+V.Local.sColumns.Redim(0,0)
+
+Gui.fmInvAtt.GsMKT6.AddGridviewFromDatatable("gvMKT6","dtMKT6")
+Gui.fmInvAtt.GsMKT6.MainView("gvMKT6")
+
+Gui.fmInvAtt.GsMKT6.SetGridviewProperty("gvMKT6","ShowGroupPanel",False)
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","PART","Visible",False)
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","LOCATION","Visible",False)
+Gui.fmInvAtt.GsMKT6.SetGridviewProperty("gvMKT6","Editable",True)
+Gui.fmInvAtt.GsMKT6.SetGridviewProperty("gvMKT6","ReadOnly",False)
+
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","MIN_QTY","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","MIN_QTY","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","MIN_QTY","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","MIN_QTY","HeaderBackColor","#FFD4FF")
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","MIN_QTY","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","FRCST_QTY_1YR","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","FRCST_QTY_1YR","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","FRCST_QTY_1YR","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","FRCST_QTY_1YR","HeaderBackColor","#FFD4FF")
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","FRCST_QTY_1YR","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","FRCST_QTY_3YR","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","FRCST_QTY_3YR","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","FRCST_QTY_3YR","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","FRCST_QTY_3YR","HeaderBackColor","#FFD4FF")
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","FRCST_QTY_3YR","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","MKT_USER_1","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","MKT_USER_1","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","MKT_USER_1","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","MKT_USER_1","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","MKT_USER_1","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","MKT_USER_2","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","MKT_USER_2","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","MKT_USER_2","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","MKT_USER_2","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","MKT_USER_2","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","MKT_USER_3","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","MKT_USER_3","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","MKT_USER_3","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","MKT_USER_3","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","MKT_USER_3","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","MKT_USER_4","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","MKT_USER_4","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","MKT_USER_4","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","MKT_USER_4","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","MKT_USER_4","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","MKT_USER_5","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","MKT_USER_5","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","MKT_USER_5","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","MKT_USER_5","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","MKT_USER_5","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","MKT_USER_6","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","MKT_USER_6","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","MKT_USER_6","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","MKT_USER_6","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","MKT_USER_6","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","MKT_USER_7","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","MKT_USER_7","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","MKT_USER_7","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","MKT_USER_7","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","MKT_USER_7","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","MKT_USER_8","HeaderFontBold",False)
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","MKT_USER_8","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","MKT_USER_8","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","MKT_USER_8","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6","MKT_USER_8","HeaderForeColor","#000000")
+
+V.Local.sColumns.Set(V.DataTable.dtMKT6.FieldNames)
+F.Intrinsic.String.Split(V.Local.sColumns.UCase,"*!*",V.Local.sColumns)
+V.Local.iOrig.Set(V.Local.sColumns.UBound)
+F.Intrinsic.Control.For(V.Local.iCNT,0,V.DataTable.dtNames.RowCount--,1)
+F.Intrinsic.String.Build("{0}",V.DataTable.dtNames(V.Local.iCNT).SQL_NAME!FieldValTrim,V.Local.sS_NAME)
+F.Intrinsic.String.Build("{0}",V.DataTable.dtNames(V.Local.iCNT).FRIENDLY_NAME!FieldValTrim,V.Local.sF_NAME)
+	F.Intrinsic.Variable.RemoveArrayElementByValue(V.Local.sColumns,V.Local.sS_NAME.UCase,V.Local.sColumns)
+	F.Intrinsic.Control.If(V.Local.iOrig,>,V.Local.sColumns.UBound)
+		V.Local.iOrig.Set(V.Local.sColumns.UBound)
+		F.Intrinsic.Control.If(V.Local.sF_NAME,<>,"")
+			Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6",V.Local.sS_NAME,"Caption",V.Local.sF_NAME)
+		F.Intrinsic.Control.Else
+			Gui.fmInvAtt.GsMKT6.SetColumnProperty("gvMKT6",V.Local.sS_NAME,"Caption",V.Local.sS_NAME)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Next(V.Local.iCNT)
+V.Local.sColumns.Redim(0,0)
+
+Gui.fmInvAtt.GsMKT1.ResumeLayout
+Gui.fmInvAtt.GsMKT2.ResumeLayout
+Gui.fmInvAtt.GsMKT3.ResumeLayout
+Gui.fmInvAtt.GsMKT4.ResumeLayout
+Gui.fmInvAtt.GsMKT5.ResumeLayout
+Gui.fmInvAtt.GsMKT6.ResumeLayout
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(Error,"SubRoutine",V.Ambient.CurrentSubroutine,"eNumber",V.Ambient.ErrorNumber,"eDescription",V.Ambient.ErrorDescription)
+F.Intrinsic.Control.EndTry
+Program.Sub.MKTGrids.End
+
+Program.Sub.TECHGrids.Start
+F.Intrinsic.Control.Try
+V.Local.iCNT.Declare
+V.Local.sColumns.Declare
+V.Local.sS_NAME.Declare
+V.Local.sF_NAME.Declare
+V.Local.bColExists.Declare
+V.Local.iOrig.Declare
+
+Gui.fmInvAtt.GsTECH1.SuspendLayout
+Gui.fmInvAtt.GsTECH2.SuspendLayout
+Gui.fmInvAtt.GsTECH3.SuspendLayout
+Gui.fmInvAtt.GsTECH4.SuspendLayout
+Gui.fmInvAtt.GsTECH5.SuspendLayout
+
+Gui.fmInvAtt.GsTECH1.AddGridviewFromDatatable("gvTECH1","dtTECH1")
+Gui.fmInvAtt.GsTECH1.MainView("gvTECH1")
+
+Gui.fmInvAtt.GsTECH1.SetGridviewProperty("gvTECH1","ShowGroupPanel",False)
+Gui.fmInvAtt.GsTECH1.SetGridviewProperty("gvTECH1","Editable",True)
+Gui.fmInvAtt.GsTECH1.SetGridviewProperty("gvTECH1","ReadOnly",False)
+
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","PART","Visible",False)
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","LOCATION","Visible",False)
+
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","CL_PICKUP","HeaderFontBold",False)
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","CL_PICKUP","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","CL_PICKUP","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","CL_PICKUP","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","CL_PICKUP","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","CL_DROPOUT","HeaderFontBold",False)
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","CL_DROPOUT","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","CL_DROPOUT","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","CL_DROPOUT","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","CL_DROPOUT","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","CL_INRUSH_CRNT","HeaderFontBold",False)
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","CL_INRUSH_CRNT","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","CL_INRUSH_CRNT","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","CL_INRUSH_CRNT","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","CL_INRUSH_CRNT","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","CL_HLD_CRNT_SUPR","HeaderFontBold",False)
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","CL_HLD_CRNT_SUPR","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","CL_HLD_CRNT_SUPR","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","CL_HLD_CRNT_SUPR","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","CL_HLD_CRNT_SUPR","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","CL_QUANTITY","HeaderFontBold",False)
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","CL_QUANTITY","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","CL_QUANTITY","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","CL_QUANTITY","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","CL_QUANTITY","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","ENV_PROT","HeaderFontBold",False)
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","ENV_PROT","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","ENV_PROT","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","ENV_PROT","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","ENV_PROT","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","UNTHRD_HOLE_DIAM","HeaderFontBold",False)
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","UNTHRD_HOLE_DIAM","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","UNTHRD_HOLE_DIAM","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","UNTHRD_HOLE_DIAM","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","UNTHRD_HOLE_DIAM","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","MTG_FAC_TYP_QTY","HeaderFontBold",False)
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","MTG_FAC_TYP_QTY","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","MTG_FAC_TYP_QTY","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","MTG_FAC_TYP_QTY","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","MTG_FAC_TYP_QTY","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","FEATS_PROVIDED","HeaderFontBold",False)
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","FEATS_PROVIDED","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","FEATS_PROVIDED","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","FEATS_PROVIDED","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","FEATS_PROVIDED","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","MTG_FAC_PATTRN","HeaderFontBold",False)
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","MTG_FAC_PATTRN","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","MTG_FAC_PATTRN","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","MTG_FAC_PATTRN","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1","MTG_FAC_PATTRN","HeaderForeColor","#000000")
+
+V.Local.sColumns.Set(V.DataTable.dtTECH1.FieldNames)
+F.Intrinsic.String.Split(V.Local.sColumns.UCase,"*!*",V.Local.sColumns)
+V.Local.iOrig.Set(V.Local.sColumns.UBound)
+F.Intrinsic.Control.For(V.Local.iCNT,0,V.DataTable.dtNames.RowCount--,1)
+F.Intrinsic.String.Build("{0}",V.DataTable.dtNames(V.Local.iCNT).SQL_NAME!FieldValTrim,V.Local.sS_NAME)
+F.Intrinsic.String.Build("{0}",V.DataTable.dtNames(V.Local.iCNT).FRIENDLY_NAME!FieldValTrim,V.Local.sF_NAME)
+	F.Intrinsic.Variable.RemoveArrayElementByValue(V.Local.sColumns,V.Local.sS_NAME.UCase,V.Local.sColumns)
+	F.Intrinsic.Control.If(V.Local.iOrig,>,V.Local.sColumns.UBound)
+		V.Local.iOrig.Set(V.Local.sColumns.UBound)
+		F.Intrinsic.Control.If(V.Local.sF_NAME,<>,"")
+			Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1",V.Local.sS_NAME,"Caption",V.Local.sF_NAME)
+		F.Intrinsic.Control.Else
+			Gui.fmInvAtt.GsTECH1.SetColumnProperty("gvTECH1",V.Local.sS_NAME,"Caption",V.Local.sS_NAME)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Next(V.Local.iCNT)
+V.Local.sColumns.Redim(0,0)
+
+Gui.fmInvAtt.GsTECH2.AddGridviewFromDatatable("gvTECH2","dtTECH2")
+Gui.fmInvAtt.GsTECH2.MainView("gvTECH2")
+
+Gui.fmInvAtt.GsTECH2.SetGridviewProperty("gvTECH2","ShowGroupPanel",False)
+Gui.fmInvAtt.GsTECH2.SetGridviewProperty("gvTECH2","Editable",True)
+Gui.fmInvAtt.GsTECH2.SetGridviewProperty("gvTECH2","ReadOnly",False)
+
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","PART","Visible",False)
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","LOCATION","Visible",False)
+
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","NOM_OP_CRNT_RTG_TYP","HeaderFontBold",False)
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","NOM_OP_CRNT_RTG_TYP","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","NOM_OP_CRNT_RTG_TYP","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","NOM_OP_CRNT_RTG_TYP","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","NOM_OP_CRNT_RTG_TYP","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","V_RTG_TYP_AT_SPC_TMP","HeaderFontBold",False)
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","V_RTG_TYP_AT_SPC_TMP","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","V_RTG_TYP_AT_SPC_TMP","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","V_RTG_TYP_AT_SPC_TMP","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","V_RTG_TYP_AT_SPC_TMP","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","MC_LD_CRNT_AT_MRV_DC","HeaderFontBold",False)
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","MC_LD_CRNT_AT_MRV_DC","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","MC_LD_CRNT_AT_MRV_DC","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","MC_LD_CRNT_AT_MRV_DC","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","MC_LD_CRNT_AT_MRV_DC","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","MC_LD_CRNT_AT_MRV_AC","HeaderFontBold",False)
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","MC_LD_CRNT_AT_MRV_AC","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","MC_LD_CRNT_AT_MRV_AC","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","MC_LD_CRNT_AT_MRV_AC","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","MC_LD_CRNT_AT_MRV_AC","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","MC_MAX_V_RTG_VDC","HeaderFontBold",False)
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","MC_MAX_V_RTG_VDC","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","MC_MAX_V_RTG_VDC","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","MC_MAX_V_RTG_VDC","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","MC_MAX_V_RTG_VDC","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","MC_MAX_V_RTG_VAC","HeaderFontBold",False)
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","MC_MAX_V_RTG_VAC","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","MC_MAX_V_RTG_VAC","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","MC_MAX_V_RTG_VAC","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","MC_MAX_V_RTG_VAC","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","INSUL_RESIST","HeaderFontBold",False)
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","INSUL_RESIST","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","INSUL_RESIST","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","INSUL_RESIST","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","INSUL_RESIST","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","CNTCTS_TO_GRND","HeaderFontBold",False)
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","CNTCTS_TO_GRND","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","CNTCTS_TO_GRND","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","CNTCTS_TO_GRND","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","CNTCTS_TO_GRND","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","BETWEEN_CNTCTS","HeaderFontBold",False)
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","BETWEEN_CNTCTS","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","BETWEEN_CNTCTS","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","BETWEEN_CNTCTS","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","BETWEEN_CNTCTS","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","COIL_TO_GRND","HeaderFontBold",False)
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","COIL_TO_GRND","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","COIL_TO_GRND","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","COIL_TO_GRND","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2","COIL_TO_GRND","HeaderForeColor","#000000")
+
+V.Local.sColumns.Set(V.DataTable.dtTECH2.FieldNames)
+F.Intrinsic.String.Split(V.Local.sColumns.UCase,"*!*",V.Local.sColumns)
+V.Local.iOrig.Set(V.Local.sColumns.UBound)
+F.Intrinsic.Control.For(V.Local.iCNT,0,V.DataTable.dtNames.RowCount--,1)
+F.Intrinsic.String.Build("{0}",V.DataTable.dtNames(V.Local.iCNT).SQL_NAME!FieldValTrim,V.Local.sS_NAME)
+F.Intrinsic.String.Build("{0}",V.DataTable.dtNames(V.Local.iCNT).FRIENDLY_NAME!FieldValTrim,V.Local.sF_NAME)
+	F.Intrinsic.Variable.RemoveArrayElementByValue(V.Local.sColumns,V.Local.sS_NAME.UCase,V.Local.sColumns)
+	F.Intrinsic.Control.If(V.Local.iOrig,>,V.Local.sColumns.UBound)
+		V.Local.iOrig.Set(V.Local.sColumns.UBound)
+		F.Intrinsic.Control.If(V.Local.sF_NAME,<>,"")
+			Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2",V.Local.sS_NAME,"Caption",V.Local.sF_NAME)
+		F.Intrinsic.Control.Else
+			Gui.fmInvAtt.GsTECH2.SetColumnProperty("gvTECH2",V.Local.sS_NAME,"Caption",V.Local.sS_NAME)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Next(V.Local.iCNT)
+V.Local.sColumns.Redim(0,0)
+
+Gui.fmInvAtt.GsTECH3.AddGridviewFromDatatable("gvTECH3","dtTECH3")
+Gui.fmInvAtt.GsTECH3.MainView("gvTECH3")
+
+Gui.fmInvAtt.GsTECH3.SetGridviewProperty("gvTECH3","ShowGroupPanel",False)
+Gui.fmInvAtt.GsTECH3.SetGridviewProperty("gvTECH3","Editable",True)
+Gui.fmInvAtt.GsTECH3.SetGridviewProperty("gvTECH3","ReadOnly",False)
+
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","PART","Visible",False)
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","LOCATION","Visible",False)
+
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","ALTITUDE","HeaderFontBold",False)
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","ALTITUDE","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","ALTITUDE","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","ALTITUDE","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","ALTITUDE","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","SHOCK_RESISTANCE","HeaderFontBold",False)
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","SHOCK_RESISTANCE","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","SHOCK_RESISTANCE","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","SHOCK_RESISTANCE","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","SHOCK_RESISTANCE","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","VIB_SINUSOIDAL","HeaderFontBold",False)
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","VIB_SINUSOIDAL","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","VIB_SINUSOIDAL","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","VIB_SINUSOIDAL","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","VIB_SINUSOIDAL","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","OVERALL_WEIGHT","HeaderFontBold",False)
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","OVERALL_WEIGHT","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","OVERALL_WEIGHT","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","OVERALL_WEIGHT","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","OVERALL_WEIGHT","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","OVERALL_LENGTH","HeaderFontBold",False)
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","OVERALL_LENGTH","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","OVERALL_LENGTH","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","OVERALL_LENGTH","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","OVERALL_LENGTH","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","OVERALL_WIDTH","HeaderFontBold",False)
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","OVERALL_WIDTH","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","OVERALL_WIDTH","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","OVERALL_WIDTH","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","OVERALL_WIDTH","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","OVERALL_HEIGHT","HeaderFontBold",False)
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","OVERALL_HEIGHT","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","OVERALL_HEIGHT","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","OVERALL_HEIGHT","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","OVERALL_HEIGHT","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","C2C_BT_MTG_PRL_LNGTH","HeaderFontBold",False)
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","C2C_BT_MTG_PRL_LNGTH","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","C2C_BT_MTG_PRL_LNGTH","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","C2C_BT_MTG_PRL_LNGTH","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","C2C_BT_MTG_PRL_LNGTH","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","C2C_BT_MTG_PRL_WIDTH","HeaderFontBold",False)
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","C2C_BT_MTG_PRL_WIDTH","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","C2C_BT_MTG_PRL_WIDTH","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","C2C_BT_MTG_PRL_WIDTH","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","C2C_BT_MTG_PRL_WIDTH","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","DUTY_TYPE","HeaderFontBold",False)
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","DUTY_TYPE","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","DUTY_TYPE","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","DUTY_TYPE","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3","DUTY_TYPE","HeaderForeColor","#000000")
+
+V.Local.sColumns.Set(V.DataTable.dtTECH3.FieldNames)
+F.Intrinsic.String.Split(V.Local.sColumns.UCase,"*!*",V.Local.sColumns)
+V.Local.iOrig.Set(V.Local.sColumns.UBound)
+F.Intrinsic.Control.For(V.Local.iCNT,0,V.DataTable.dtNames.RowCount--,1)
+F.Intrinsic.String.Build("{0}",V.DataTable.dtNames(V.Local.iCNT).SQL_NAME!FieldValTrim,V.Local.sS_NAME)
+F.Intrinsic.String.Build("{0}",V.DataTable.dtNames(V.Local.iCNT).FRIENDLY_NAME!FieldValTrim,V.Local.sF_NAME)
+	F.Intrinsic.Variable.RemoveArrayElementByValue(V.Local.sColumns,V.Local.sS_NAME.UCase,V.Local.sColumns)
+	F.Intrinsic.Control.If(V.Local.iOrig,>,V.Local.sColumns.UBound)
+		V.Local.iOrig.Set(V.Local.sColumns.UBound)
+		F.Intrinsic.Control.If(V.Local.sF_NAME,<>,"")
+			Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3",V.Local.sS_NAME,"Caption",V.Local.sF_NAME)
+		F.Intrinsic.Control.Else
+			Gui.fmInvAtt.GsTECH3.SetColumnProperty("gvTECH3",V.Local.sS_NAME,"Caption",V.Local.sS_NAME)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Next(V.Local.iCNT)
+V.Local.sColumns.Redim(0,0)
+
+Gui.fmInvAtt.GsTECH4.AddGridviewFromDatatable("gvTECH4","dtTECH4")
+Gui.fmInvAtt.GsTECH4.MainView("gvTECH4")
+
+Gui.fmInvAtt.GsTECH4.SetGridviewProperty("gvTECH4","ShowGroupPanel",False)
+Gui.fmInvAtt.GsTECH4.SetGridviewProperty("gvTECH4","Editable",True)
+Gui.fmInvAtt.GsTECH4.SetGridviewProperty("gvTECH4","ReadOnly",False)
+
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","PART","Visible",False)
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","LOCATION","Visible",False)
+
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","RESISTIVE","HeaderFontBold",False)
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","RESISTIVE","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","RESISTIVE","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","RESISTIVE","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","RESISTIVE","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","CONDUCTIVE","HeaderFontBold",False)
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","CONDUCTIVE","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","CONDUCTIVE","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","CONDUCTIVE","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","CONDUCTIVE","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","LAMP","HeaderFontBold",False)
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","LAMP","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","LAMP","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","LAMP","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","LAMP","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","INTERRUPT","HeaderFontBold",False)
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","INTERRUPT","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","INTERRUPT","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","INTERRUPT","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","INTERRUPT","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","OVERLOAD","HeaderFontBold",False)
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","OVERLOAD","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","OVERLOAD","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","OVERLOAD","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","OVERLOAD","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","V_DROP","HeaderFontBold",False)
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","V_DROP","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","V_DROP","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","V_DROP","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","V_DROP","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","OPERATE","HeaderFontBold",False)
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","OPERATE","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","OPERATE","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","OPERATE","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","OPERATE","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","RLEASE","HeaderFontBold",False)
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","RLEASE","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","RLEASE","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","RLEASE","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","RLEASE","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","TRANSFER","HeaderFontBold",False)
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","TRANSFER","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","TRANSFER","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","TRANSFER","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","TRANSFER","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","BOUNCE","HeaderFontBold",False)
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","BOUNCE","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","BOUNCE","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","BOUNCE","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4","BOUNCE","HeaderForeColor","#000000")
+
+V.Local.sColumns.Set(V.DataTable.dtTECH4.FieldNames)
+F.Intrinsic.String.Split(V.Local.sColumns.UCase,"*!*",V.Local.sColumns)
+V.Local.iOrig.Set(V.Local.sColumns.UBound)
+F.Intrinsic.Control.For(V.Local.iCNT,0,V.DataTable.dtNames.RowCount--,1)
+F.Intrinsic.String.Build("{0}",V.DataTable.dtNames(V.Local.iCNT).SQL_NAME!FieldValTrim,V.Local.sS_NAME)
+F.Intrinsic.String.Build("{0}",V.DataTable.dtNames(V.Local.iCNT).FRIENDLY_NAME!FieldValTrim,V.Local.sF_NAME)
+	F.Intrinsic.Variable.RemoveArrayElementByValue(V.Local.sColumns,V.Local.sS_NAME.UCase,V.Local.sColumns)
+	F.Intrinsic.Control.If(V.Local.iOrig,>,V.Local.sColumns.UBound)
+		V.Local.iOrig.Set(V.Local.sColumns.UBound)
+		F.Intrinsic.Control.If(V.Local.sF_NAME,<>,"")
+			Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4",V.Local.sS_NAME,"Caption",V.Local.sF_NAME)
+		F.Intrinsic.Control.Else
+			Gui.fmInvAtt.GsTECH4.SetColumnProperty("gvTECH4",V.Local.sS_NAME,"Caption",V.Local.sS_NAME)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Next(V.Local.iCNT)
+V.Local.sColumns.Redim(0,0)
+
+Gui.fmInvAtt.GsTECH5.AddGridviewFromDatatable("gvTECH5","dtTECH5")
+Gui.fmInvAtt.GsTECH5.MainView("gvTECH5")
+
+Gui.fmInvAtt.GsTECH5.SetGridviewProperty("gvTECH5","ShowGroupPanel",False)
+Gui.fmInvAtt.GsTECH5.SetGridviewProperty("gvTECH5","Editable",True)
+Gui.fmInvAtt.GsTECH5.SetGridviewProperty("gvTECH5","ReadOnly",False)
+
+Gui.fmInvAtt.GsTECH5.SetColumnProperty("gvTECH5","PART","Visible",False)
+Gui.fmInvAtt.GsTECH5.SetColumnProperty("gvTECH5","LOCATION","Visible",False)
+
+Gui.fmInvAtt.GsTECH5.SetColumnProperty("gvTECH5","RUPTURE","HeaderFontBold",False)
+Gui.fmInvAtt.GsTECH5.SetColumnProperty("gvTECH5","RUPTURE","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsTECH5.SetColumnProperty("gvTECH5","RUPTURE","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsTECH5.SetColumnProperty("gvTECH5","RUPTURE","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsTECH5.SetColumnProperty("gvTECH5","RUPTURE","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsTECH5.SetColumnProperty("gvTECH5","MECHANICAL","HeaderFontBold",False)
+Gui.fmInvAtt.GsTECH5.SetColumnProperty("gvTECH5","MECHANICAL","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsTECH5.SetColumnProperty("gvTECH5","MECHANICAL","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsTECH5.SetColumnProperty("gvTECH5","MECHANICAL","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsTECH5.SetColumnProperty("gvTECH5","MECHANICAL","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsTECH5.SetColumnProperty("gvTECH5","TECH_USER_1","HeaderFontBold",False)
+Gui.fmInvAtt.GsTECH5.SetColumnProperty("gvTECH5","TECH_USER_1","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsTECH5.SetColumnProperty("gvTECH5","TECH_USER_1","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsTECH5.SetColumnProperty("gvTECH5","TECH_USER_1","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsTECH5.SetColumnProperty("gvTECH5","TECH_USER_1","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsTECH5.SetColumnProperty("gvTECH5","TECH_USER_2","HeaderFontBold",False)
+Gui.fmInvAtt.GsTECH5.SetColumnProperty("gvTECH5","TECH_USER_2","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsTECH5.SetColumnProperty("gvTECH5","TECH_USER_2","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsTECH5.SetColumnProperty("gvTECH5","TECH_USER_2","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsTECH5.SetColumnProperty("gvTECH5","TECH_USER_2","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsTECH5.SetColumnProperty("gvTECH5","TECH_USER_3","HeaderFontBold",False)
+Gui.fmInvAtt.GsTECH5.SetColumnProperty("gvTECH5","TECH_USER_3","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsTECH5.SetColumnProperty("gvTECH5","TECH_USER_3","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsTECH5.SetColumnProperty("gvTECH5","TECH_USER_3","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsTECH5.SetColumnProperty("gvTECH5","TECH_USER_3","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsTECH5.SetColumnProperty("gvTECH5","TECH_USER_4","HeaderFontBold",False)
+Gui.fmInvAtt.GsTECH5.SetColumnProperty("gvTECH5","TECH_USER_4","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsTECH5.SetColumnProperty("gvTECH5","TECH_USER_4","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsTECH5.SetColumnProperty("gvTECH5","TECH_USER_4","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsTECH5.SetColumnProperty("gvTECH5","TECH_USER_4","HeaderForeColor","#000000")
+
+V.Local.sColumns.Set(V.DataTable.dtTECH5.FieldNames)
+F.Intrinsic.String.Split(V.Local.sColumns.UCase,"*!*",V.Local.sColumns)
+V.Local.iOrig.Set(V.Local.sColumns.UBound)
+F.Intrinsic.Control.For(V.Local.iCNT,0,V.DataTable.dtNames.RowCount--,1)
+F.Intrinsic.String.Build("{0}",V.DataTable.dtNames(V.Local.iCNT).SQL_NAME!FieldValTrim,V.Local.sS_NAME)
+F.Intrinsic.String.Build("{0}",V.DataTable.dtNames(V.Local.iCNT).FRIENDLY_NAME!FieldValTrim,V.Local.sF_NAME)
+	F.Intrinsic.Variable.RemoveArrayElementByValue(V.Local.sColumns,V.Local.sS_NAME.UCase,V.Local.sColumns)
+	F.Intrinsic.Control.If(V.Local.iOrig,>,V.Local.sColumns.UBound)
+		V.Local.iOrig.Set(V.Local.sColumns.UBound)
+		F.Intrinsic.Control.If(V.Local.sF_NAME,<>,"")
+			Gui.fmInvAtt.GsTECH5.SetColumnProperty("gvTECH5",V.Local.sS_NAME,"Caption",V.Local.sF_NAME)
+		F.Intrinsic.Control.Else
+			Gui.fmInvAtt.GsTECH5.SetColumnProperty("gvTECH5",V.Local.sS_NAME,"Caption",V.Local.sS_NAME)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Next(V.Local.iCNT)
+V.Local.sColumns.Redim(0,0)
+
+Gui.fmInvAtt.GsTECH1.ResumeLayout
+Gui.fmInvAtt.GsTECH2.ResumeLayout
+Gui.fmInvAtt.GsTECH3.ResumeLayout
+Gui.fmInvAtt.GsTECH4.ResumeLayout
+Gui.fmInvAtt.GsTECH5.ResumeLayout
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(Error,"SubRoutine",V.Ambient.CurrentSubroutine,"eNumber",V.Ambient.ErrorNumber,"eDescription",V.Ambient.ErrorDescription)
+F.Intrinsic.Control.EndTry
+Program.Sub.TECHGrids.End
+
+Program.Sub.WEBGrids.Start
+F.Intrinsic.Control.Try
+V.Local.iCNT.Declare
+V.Local.sColumns.Declare
+V.Local.sS_NAME.Declare
+V.Local.sF_NAME.Declare
+V.Local.bColExists.Declare
+V.Local.iOrig.Declare
+
+Gui.fmInvAtt.GsWEB1.SuspendLayout
+Gui.fmInvAtt.GsWEB2.SuspendLayout
+Gui.fmInvAtt.GsWEB3.SuspendLayout
+
+Gui.fmInvAtt.GsWEB1.AddGridviewFromDatatable("gvWEB1","dtWEB1")
+Gui.fmInvAtt.GsWEB1.MainView("gvWEB1")
+
+Gui.fmInvAtt.GsWEB1.SetGridviewProperty("gvWEB1","ShowGroupPanel",False)
+Gui.fmInvAtt.GsWEB1.SetGridviewProperty("gvWEB1","Editable",True)
+Gui.fmInvAtt.GsWEB1.SetGridviewProperty("gvWEB1","ReadOnly",False)
+
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","PART","Visible",False)
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","LOCATION","Visible",False)
+
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","MAIN_BUS_TIE","HeaderFontBold",False)
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","MAIN_BUS_TIE","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","MAIN_BUS_TIE","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","MAIN_BUS_TIE","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","MAIN_BUS_TIE","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","STARTER_IGNITION","HeaderFontBold",False)
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","STARTER_IGNITION","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","STARTER_IGNITION","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","STARTER_IGNITION","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","STARTER_IGNITION","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","SOLENOID","HeaderFontBold",False)
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","SOLENOID","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","SOLENOID","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","SOLENOID","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","SOLENOID","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","REVERSE_CRNT_CUTOUT","HeaderFontBold",False)
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","REVERSE_CRNT_CUTOUT","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","REVERSE_CRNT_CUTOUT","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","REVERSE_CRNT_CUTOUT","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","REVERSE_CRNT_CUTOUT","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","CRNT_SENSING","HeaderFontBold",False)
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","CRNT_SENSING","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","CRNT_SENSING","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","CRNT_SENSING","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","CRNT_SENSING","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","UN_OV_V_SENSING","HeaderFontBold",False)
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","UN_OV_V_SENSING","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","UN_OV_V_SENSING","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","UN_OV_V_SENSING","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","UN_OV_V_SENSING","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","UN_OV_FREQ_SENSING","HeaderFontBold",False)
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","UN_OV_FREQ_SENSING","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","UN_OV_FREQ_SENSING","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","UN_OV_FREQ_SENSING","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","UN_OV_FREQ_SENSING","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","AUTOMATIC_CUTOUT","HeaderFontBold",False)
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","AUTOMATIC_CUTOUT","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","AUTOMATIC_CUTOUT","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","AUTOMATIC_CUTOUT","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","AUTOMATIC_CUTOUT","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","AC","HeaderFontBold",False)
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","AC","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","AC","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","AC","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","AC","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","DC","HeaderFontBold",False)
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","DC","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","DC","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","DC","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","DC","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","HERM_SEALED","HeaderFontBold",False)
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","HERM_SEALED","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","HERM_SEALED","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","HERM_SEALED","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1","HERM_SEALED","HeaderForeColor","#000000")
+
+V.Local.sColumns.Set(V.DataTable.dtWEB1.FieldNames)
+F.Intrinsic.String.Split(V.Local.sColumns.UCase,"*!*",V.Local.sColumns)
+V.Local.iOrig.Set(V.Local.sColumns.UBound)
+F.Intrinsic.Control.For(V.Local.iCNT,0,V.DataTable.dtNames.RowCount--,1)
+F.Intrinsic.String.Build("{0}",V.DataTable.dtNames(V.Local.iCNT).SQL_NAME!FieldValTrim,V.Local.sS_NAME)
+F.Intrinsic.String.Build("{0}",V.DataTable.dtNames(V.Local.iCNT).FRIENDLY_NAME!FieldValTrim,V.Local.sF_NAME)
+	F.Intrinsic.Variable.RemoveArrayElementByValue(V.Local.sColumns,V.Local.sS_NAME.UCase,V.Local.sColumns)
+	F.Intrinsic.Control.If(V.Local.iOrig,>,V.Local.sColumns.UBound)
+		V.Local.iOrig.Set(V.Local.sColumns.UBound)
+		F.Intrinsic.Control.If(V.Local.sF_NAME,<>,"")
+			Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1",V.Local.sS_NAME,"Caption",V.Local.sF_NAME)
+		F.Intrinsic.Control.Else
+			Gui.fmInvAtt.GsWEB1.SetColumnProperty("gvWEB1",V.Local.sS_NAME,"Caption",V.Local.sS_NAME)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Next(V.Local.iCNT)
+V.Local.sColumns.Redim(0,0)
+
+Gui.fmInvAtt.GsWEB2.AddGridviewFromDatatable("gvWEB2","dtWEB2")
+Gui.fmInvAtt.GsWEB2.MainView("gvWEB2")
+
+Gui.fmInvAtt.GsWEB2.SetGridviewProperty("gvWEB2","ShowGroupPanel",False)
+Gui.fmInvAtt.GsWEB2.SetGridviewProperty("gvWEB2","Editable",True)
+Gui.fmInvAtt.GsWEB2.SetGridviewProperty("gvWEB2","ReadOnly",False)
+
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","PART","Visible",False)
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","LOCATION","Visible",False)
+
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","GASKET_SEALED","HeaderFontBold",False)
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","GASKET_SEALED","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","GASKET_SEALED","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","GASKET_SEALED","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","GASKET_SEALED","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","SP_SINGLE_POLE","HeaderFontBold",False)
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","SP_SINGLE_POLE","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","SP_SINGLE_POLE","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","SP_SINGLE_POLE","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","SP_SINGLE_POLE","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","DP_DOUBLE_POLE","HeaderFontBold",False)
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","DP_DOUBLE_POLE","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","DP_DOUBLE_POLE","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","DP_DOUBLE_POLE","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","DP_DOUBLE_POLE","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","TP_THREE_POLE","HeaderFontBold",False)
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","TP_THREE_POLE","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","TP_THREE_POLE","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","TP_THREE_POLE","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","TP_THREE_POLE","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","DT_DOUBLE_THROW","HeaderFontBold",False)
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","DT_DOUBLE_THROW","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","DT_DOUBLE_THROW","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","DT_DOUBLE_THROW","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","DT_DOUBLE_THROW","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","ST_SINGLE_THROW","HeaderFontBold",False)
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","ST_SINGLE_THROW","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","ST_SINGLE_THROW","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","ST_SINGLE_THROW","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","ST_SINGLE_THROW","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","NC_NORMALLY_CLOSED","HeaderFontBold",False)
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","NC_NORMALLY_CLOSED","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","NC_NORMALLY_CLOSED","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","NC_NORMALLY_CLOSED","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","NC_NORMALLY_CLOSED","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","NO_NORMALLY_OPEN","HeaderFontBold",False)
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","NO_NORMALLY_OPEN","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","NO_NORMALLY_OPEN","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","NO_NORMALLY_OPEN","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","NO_NORMALLY_OPEN","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","SB_SINGLE_BREAK","HeaderFontBold",False)
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","SB_SINGLE_BREAK","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","SB_SINGLE_BREAK","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","SB_SINGLE_BREAK","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","SB_SINGLE_BREAK","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","DB_DOUBLE_BREAK","HeaderFontBold",False)
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","DB_DOUBLE_BREAK","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","DB_DOUBLE_BREAK","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","DB_DOUBLE_BREAK","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2","DB_DOUBLE_BREAK","HeaderForeColor","#000000")
+
+V.Local.sColumns.Set(V.DataTable.dtWEB2.FieldNames)
+F.Intrinsic.String.Split(V.Local.sColumns.UCase,"*!*",V.Local.sColumns)
+V.Local.iOrig.Set(V.Local.sColumns.UBound)
+F.Intrinsic.Control.For(V.Local.iCNT,0,V.DataTable.dtNames.RowCount--,1)
+F.Intrinsic.String.Build("{0}",V.DataTable.dtNames(V.Local.iCNT).SQL_NAME!FieldValTrim,V.Local.sS_NAME)
+F.Intrinsic.String.Build("{0}",V.DataTable.dtNames(V.Local.iCNT).FRIENDLY_NAME!FieldValTrim,V.Local.sF_NAME)
+	F.Intrinsic.Variable.RemoveArrayElementByValue(V.Local.sColumns,V.Local.sS_NAME.UCase,V.Local.sColumns)
+	F.Intrinsic.Control.If(V.Local.iOrig,>,V.Local.sColumns.UBound)
+		V.Local.iOrig.Set(V.Local.sColumns.UBound)
+		F.Intrinsic.Control.If(V.Local.sF_NAME,<>,"")
+			Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2",V.Local.sS_NAME,"Caption",V.Local.sF_NAME)
+		F.Intrinsic.Control.Else
+			Gui.fmInvAtt.GsWEB2.SetColumnProperty("gvWEB2",V.Local.sS_NAME,"Caption",V.Local.sS_NAME)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Next(V.Local.iCNT)
+V.Local.sColumns.Redim(0,0)
+
+Gui.fmInvAtt.GsWEB3.AddGridviewFromDatatable("gvWEB3","dtWEB3")
+Gui.fmInvAtt.GsWEB3.MainView("gvWEB3")
+
+Gui.fmInvAtt.GsWEB3.SetGridviewProperty("gvWEB3","ShowGroupPanel",False)
+Gui.fmInvAtt.GsWEB3.SetGridviewProperty("gvWEB3","Editable",True)
+Gui.fmInvAtt.GsWEB3.SetGridviewProperty("gvWEB3","ReadOnly",False)
+
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","PART","Visible",False)
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","LOCATION","Visible",False)
+
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","MAGNETIC_LATCHING","HeaderFontBold",False)
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","MAGNETIC_LATCHING","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","MAGNETIC_LATCHING","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","MAGNETIC_LATCHING","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","MAGNETIC_LATCHING","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","SIDESTABLE","HeaderFontBold",False)
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","SIDESTABLE","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","SIDESTABLE","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","SIDESTABLE","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","SIDESTABLE","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","CENTER_OFF","HeaderFontBold",False)
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","CENTER_OFF","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","CENTER_OFF","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","CENTER_OFF","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","CENTER_OFF","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","COIL_V_RATING_AC","HeaderFontBold",False)
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","COIL_V_RATING_AC","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","COIL_V_RATING_AC","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","COIL_V_RATING_AC","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","COIL_V_RATING_AC","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","COIL_V_RATING_DC","HeaderFontBold",False)
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","COIL_V_RATING_DC","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","COIL_V_RATING_DC","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","COIL_V_RATING_DC","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","COIL_V_RATING_DC","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","TERM_ARRANGEMENT","HeaderFontBold",False)
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","TERM_ARRANGEMENT","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","TERM_ARRANGEMENT","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","TERM_ARRANGEMENT","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","TERM_ARRANGEMENT","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","TEMP_RANGE","HeaderFontBold",False)
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","TEMP_RANGE","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","TEMP_RANGE","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","TEMP_RANGE","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","TEMP_RANGE","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","WEB_USER_1","HeaderFontBold",False)
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","WEB_USER_1","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","WEB_USER_1","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","WEB_USER_1","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","WEB_USER_1","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","WEB_USER_2","HeaderFontBold",False)
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","WEB_USER_2","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","WEB_USER_2","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","WEB_USER_2","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","WEB_USER_2","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","WEB_USER_3","HeaderFontBold",False)
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","WEB_USER_3","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","WEB_USER_3","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","WEB_USER_3","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","WEB_USER_3","HeaderForeColor","#000000")
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","WEB_USER_4","HeaderFontBold",False)
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","WEB_USER_4","HeaderFontUnderline",False)
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","WEB_USER_4","HeaderHAlignment",Center)
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","WEB_USER_4","HeaderBackColor","#E1E1E1")
+Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3","WEB_USER_4","HeaderForeColor","#000000")
+
+V.Local.sColumns.Set(V.DataTable.dtWEB3.FieldNames)
+F.Intrinsic.String.Split(V.Local.sColumns.UCase,"*!*",V.Local.sColumns)
+V.Local.iOrig.Set(V.Local.sColumns.UBound)
+F.Intrinsic.Control.For(V.Local.iCNT,0,V.DataTable.dtNames.RowCount--,1)
+F.Intrinsic.String.Build("{0}",V.DataTable.dtNames(V.Local.iCNT).SQL_NAME!FieldValTrim,V.Local.sS_NAME)
+F.Intrinsic.String.Build("{0}",V.DataTable.dtNames(V.Local.iCNT).FRIENDLY_NAME!FieldValTrim,V.Local.sF_NAME)
+	F.Intrinsic.Variable.RemoveArrayElementByValue(V.Local.sColumns,V.Local.sS_NAME.UCase,V.Local.sColumns)
+	F.Intrinsic.Control.If(V.Local.iOrig,>,V.Local.sColumns.UBound)
+		V.Local.iOrig.Set(V.Local.sColumns.UBound)
+		F.Intrinsic.Control.If(V.Local.sF_NAME,<>,"")
+			Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3",V.Local.sS_NAME,"Caption",V.Local.sF_NAME)
+		F.Intrinsic.Control.Else
+			Gui.fmInvAtt.GsWEB3.SetColumnProperty("gvWEB3",V.Local.sS_NAME,"Caption",V.Local.sS_NAME)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Next(V.Local.iCNT)
+V.Local.sColumns.Redim(0,0)
+
+Gui.fmInvAtt.GsWEB1.ResumeLayout
+Gui.fmInvAtt.GsWEB2.ResumeLayout
+Gui.fmInvAtt.GsWEB3.ResumeLayout
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(Error,"SubRoutine",V.Ambient.CurrentSubroutine,"eNumber",V.Ambient.ErrorNumber,"eDescription",V.Ambient.ErrorDescription)
+F.Intrinsic.Control.EndTry
+Program.Sub.WEBGrids.End
+
+Program.Sub.MX.Start
+F.Intrinsic.Control.Try
+V.Local.sMKTNames.Declare
+V.Local.sTECHNames.Declare
+V.Local.sWEBNames.Declare
+V.Local.sColNames.Declare
+V.Local.iCnt.Declare
+
+'Maintenance screen to allow customer to dynamically rename columns
+F.ODBC.Connection!conts.OpenCompanyConnection
+
+F.Data.DataTable.CreateFromSQL("dtMKTNames","conts","Select * from GCG_5693_INV_MKT")
+F.Data.DataTable.RemoveColumn("dtMKTNames","PART")
+F.Data.DataTable.RemoveColumn("dtMKTNames","LOCATION")
+V.Local.sMKTNames.Set(V.DataTable.dtMKTNames.FieldNames)
+F.Data.DataTable.Close("dtMKTNames")
+
+F.Data.DataTable.CreateFromSQL("dtTECHNames","conts","Select * from GCG_5693_INV_TECH")
+F.Data.DataTable.RemoveColumn("dtTECHNames","PART")
+F.Data.DataTable.RemoveColumn("dtTECHNames","LOCATION")
+V.Local.sTECHNames.Set(V.DataTable.dtTECHNames.FieldNames)
+F.Data.DataTable.Close("dtTECHNames")
+
+F.Data.DataTable.CreateFromSQL("dtWEBNames","conts","Select * from GCG_5693_INV_WEB")
+F.Data.DataTable.RemoveColumn("dtWEBNames","PART")
+F.Data.DataTable.RemoveColumn("dtWEBNames","LOCATION")
+V.Local.sWEBNames.Set(V.DataTable.dtWEBNames.FieldNames)
+F.Data.DataTable.Close("dtWEBNames")
+
+F.Intrinsic.String.Build("{0}*!*{1}*!*{2}",V.Local.sMKTNames,V.Local.sTECHNames,V.Local.sWEBNames,V.Local.sColNames)
+
+F.Intrinsic.String.Split(V.Local.sColNames,"*!*",V.Local.sColNames)
+
+F.Data.DataTable.Create("dtColNamesTemp")
+F.Data.DataTable.AddColumn("dtColNamesTemp","SQL_NAME","String")
+F.Data.DataTable.AddColumn("dtColNamesTemp","IDX","Long")
+
+F.Intrinsic.Control.For(V.Local.iCnt,0,V.Local.sColNames.UBound,1)
+	F.Data.DataTable.AddRow("dtColNamesTemp","SQL_NAME",V.Local.sColNames(V.Local.iCnt),"IDX",V.Local.iCnt)
+F.Intrinsic.Control.Next(V.Local.iCnt)
+
+F.Data.DataTable.SaveToDB("dtColNamesTemp","conts","GCG_5693_COL_NAMES","SQL_NAME",256)
+
+F.Data.DataTable.CreateFromSQL("dtColNames","conts","Select RTRIM(SQL_NAME) as SQL_NAME,RTRIM(FRIENDLY_NAME) as FRIENDLY_NAME from GCG_5693_COL_NAMES order by IDX",True)
+
+Gui.fmMX.GsMX.AddGridviewFromDatatable("gvColNames","dtColNames")
+
+Gui.fmMX.GsMX.MainView("gvColNames")
+F.ODBC.Connection!conts.Close
+
+Gui.fmMX.GsMX.SuspendLayout
+
+Gui.fmMX.GsMX.SetColumnProperty("gvColNames","SQL_NAME","HeaderFontBold",False)
+Gui.fmMX.GsMX.SetColumnProperty("gvColNames","FRIENDLY_NAME","HeaderFontBold",False)
+
+Gui.fmMX.GsMX.SetColumnProperty("gvColNames","SQL_NAME","HeaderFontUnderline",False)
+Gui.fmMX.GsMX.SetColumnProperty("gvColNames","FRIENDLY_NAME","HeaderFontUnderline",False)
+
+Gui.fmMX.GsMX.SetColumnProperty("gvColNames","SQL_NAME","HeaderHAlignment","Center")
+Gui.fmMX.GsMX.SetColumnProperty("gvColNames","FRIENDLY_NAME","HeaderHAlignment","Center")
+
+Gui.fmMX.GsMX.SetColumnProperty("gvColNames","SQL_NAME","ReadOnly",True)
+Gui.fmMX.GsMX.SetColumnProperty("gvColNames","SQL_NAME","AllowEdit",False)
+Gui.fmMX.GsMX.SetColumnProperty("gvColNames","FRIENDLY_NAME","ReadOnly",False)
+Gui.fmMX.GsMX.SetColumnProperty("gvColNames","FRIENDLY_NAME","AllowEdit",True)
+
+Gui.fmMX.GsMX.SetColumnProperty("gvColNames","SQL_NAME","CellFontBold",True)
+Gui.fmMX.GsMX.SetColumnProperty("gvColNames","SQL_NAME","CellBackColor",-2147483633)
+
+Gui.fmMX.GsMX.ResumeLayout
+
+F.Intrinsic.Control.CallSub(SetIcon)
+
+Gui.fmMX..Show
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(Error,"SubRoutine",V.Ambient.CurrentSubroutine,"eNumber",V.Ambient.ErrorNumber,"eDescription",V.Ambient.ErrorDescription)
+F.Intrinsic.Control.EndTry
+Program.Sub.MX.End
+
+Program.Sub.GsMX_CellValueChanged.Start
+F.Intrinsic.Control.Try
+F.ODBC.Connection!conts.OpenCompanyConnection
+
+F.Data.DataTable.SaveToDB("dtColNames","conts","GCG_5693_COL_NAMES","SQL_NAME",256)
+
+F.ODBC.Connection!conts.Close
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(Error,"SubRoutine",V.Ambient.CurrentSubroutine,"eNumber",V.Ambient.ErrorNumber,"eDescription",V.Ambient.ErrorDescription)
+F.Intrinsic.Control.EndTry
+Program.Sub.GsMX_CellValueChanged.End
+
+Program.Sub.SetIcon.Start
+F.Intrinsic.Control.Try
+V.Local.sForm.Declare
+V.Local.bExists.Declare
+V.Local.sIcon.Declare
+V.Local.iCounter.Declare
+
+F.Intrinsic.String.Build("{0}\ART\gss2.ico",V.Caller.GlobalDir,v.Local.sIcon)
+F.Intrinsic.File.Exists(V.Local.sIcon, V.Local.bExists)
+F.Intrinsic.Control.If(V.Local.bExists.Not)
+    F.Intrinsic.String.Build("{0}\GAB\GAS\gss2.ico",V.Caller.PluginsDir,v.Local.sIcon)
+    F.Intrinsic.File.Exists(V.Local.sIcon, V.Local.bExists)
+    F.Intrinsic.Control.If(V.Local.bExists.Not)
+        F.Intrinsic.Control.ExitSub
+    F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.UI.GetFormList(V.Local.sForm)
+F.Intrinsic.String.Split(V.Local.sForm, "*!*", V.Local.sForm)
+
+F.Intrinsic.Control.For(V.Local.iCounter, 0, V.Local.sForm.UBound, 1)
+    Gui.[V.Local.sForm(V.Local.iCounter)]..Icon(V.Local.sIcon)
+F.Intrinsic.Control.Next(V.Local.iCounter)
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(Error,"SubRoutine",V.Ambient.CurrentSubroutine,"eNumber",V.Ambient.ErrorNumber,"eDescription",V.Ambient.ErrorDescription)
+F.Intrinsic.Control.EndTry
+Program.Sub.SetIcon.End
+
+Program.Sub.Error.Start
+V.Local.sError.Declare
+V.Local.iRet.Declare
+V.Local.sSep.Declare
+
+F.Intrinsic.String.Build("-------------------------------------------------------------------------------------",,V.Local.sSep)
+F.Intrinsic.String.Build("({5}-{6}){0}{7}{0}Project: {4}{0}{7}{0}Sub: {1}{0}Error: {2}, {3}", V.Ambient.NewLine, V.Args.SubRoutine, V.Args.eNumber, V.Args.eDescription,V.Caller.ScriptFile,V.Ambient.Date, V.Ambient.Time,V.Local.sSep,V.Local.sError)
+F.Intrinsic.UI.Msgbox(V.Local.sError,"Error",V.Local.iRet)
+Program.Sub.Error.End
+
+Program.Sub.fmInvAtt_UnLoad.Start
+F.Intrinsic.Control.Try
+V.Local.sPNPad.Declare
+V.Local.sPartRev.Declare
+V.Local.iCnt.Declare
+V.Local.sDataTables.Declare
+V.Local.sDTName.Declare
+V.Local.sSQL.Declare
+
+'Save any value changes to the database
+F.Intrinsic.String.RPad(V.Passed.000007.Trim," ",17,V.Local.sPNPad)
+F.Intrinsic.String.Build("{0}{1}",V.Local.sPNPad,V.Passed.000008.Trim,V.Local.sPartRev)
+
+F.ODBC.Connection!conts.OpenCompanyConnection
+
+F.Intrinsic.String.Build("select * from GCG_5693_INV_MKT where PART = '{0}' and (LOCATION = '' or LOCATION IS NULL);",V.Local.sPartRev,V.Passed.000009.Trim,V.Local.sSQL)
+
+F.ODBC.Connection!conts.ExecuteAndReturn(V.Local.sSQL,V.Local.sSQL)
+
+F.Intrinsic.Control.If(V.Ambient.ExecuteAndReturnEOF)
+	F.Intrinsic.String.Build("insert into GCG_5693_INV_MKT (PART,LOCATION) values ('{0}','{1}');",V.Local.sPartRev,V.Passed.000009.Trim,V.Local.sSQL)
+F.ODBC.Connection!conts.Execute(V.Local.sSQL)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.String.Build("select * from GCG_5693_INV_TECH where PART = '{0}' and (LOCATION = '' or LOCATION IS NULL);",V.Local.sPartRev,V.Passed.000009.Trim,V.Local.sSQL)
+
+F.ODBC.Connection!conts.ExecuteAndReturn(V.Local.sSQL,V.Local.sSQL)
+
+F.Intrinsic.Control.If(V.Ambient.ExecuteAndReturnEOF)
+	F.Intrinsic.String.Build("insert into GCG_5693_INV_TECH (PART,LOCATION) values ('{0}','{1}');",V.Local.sPartRev,V.Passed.000009.Trim,V.Local.sSQL)
+F.ODBC.Connection!conts.Execute(V.Local.sSQL)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.String.Build("select * from GCG_5693_INV_WEB where PART = '{0}' and (LOCATION = '' or LOCATION IS NULL);",V.Local.sPartRev,V.Passed.000009.Trim,V.Local.sSQL)
+
+F.ODBC.Connection!conts.ExecuteAndReturn(V.Local.sSQL,V.Local.sSQL)
+
+F.Intrinsic.Control.If(V.Ambient.ExecuteAndReturnEOF)
+	F.Intrinsic.String.Build("insert into GCG_5693_INV_WEB (PART,LOCATION) values ('{0}','{1}');",V.Local.sPartRev,V.Passed.000009.Trim,V.Local.sSQL)
+F.ODBC.Connection!conts.Execute(V.Local.sSQL)
+F.Intrinsic.Control.EndIf
+
+V.Local.sSQL.Set("")
+
+V.Local.sDataTables.Set("dtMKT1*!*dtMKT2*!*dtMKT3*!*dtMKT4*!*dtMKT5*!*dtMKT6*!*dtTECH1*!*dtTECH2*!*dtTECH3*!*dtTECH4*!*dtTECH5*!*dtWEB1*!*dtWEB2*!*dtWEB3")
+F.Intrinsic.String.Split(V.Local.sDataTables,"*!*",V.Local.sDataTables)
+
+F.Intrinsic.Control.For(V.Local.iCnt,0,V.Local.sDataTables.UBound,1)
+	F.Intrinsic.String.Left(V.Local.sDataTables(V.Local.iCnt),5,V.Local.sDTName)
+	F.Intrinsic.Control.SelectCase(V.Local.sDTName)
+		F.Intrinsic.Control.Case("dtMKT")
+			F.Data.DataTable.SaveToDB(V.Local.sDataTables(V.Local.iCnt),"conts","GCG_5693_INV_MKT","PART*!*LOCATION",256)
+		F.Intrinsic.Control.Case("dtTEC")
+			F.Data.DataTable.SaveToDB(V.Local.sDataTables(V.Local.iCnt),"conts","GCG_5693_INV_TECH","PART*!*LOCATION",256)
+		F.Intrinsic.Control.Case("dtWEB")
+			F.Data.DataTable.SaveToDB(V.Local.sDataTables(V.Local.iCnt),"conts","GCG_5693_INV_WEB","PART*!*LOCATION",256)
+	F.Intrinsic.Control.EndSelect
+F.Intrinsic.Control.Next(V.Local.iCnt)
+
+F.ODBC.Connection!conts.Close
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(Error,"SubRoutine",V.Ambient.CurrentSubroutine,"eNumber",V.Ambient.ErrorNumber,"eDescription",V.Ambient.ErrorDescription)
+F.Intrinsic.Control.EndTry
+F.Intrinsic.Control.End
+Program.Sub.fmInvAtt_UnLoad.End
+
+Program.Sub.fmMX_UnLoad.Start
+F.Intrinsic.Control.End
+Program.Sub.fmMX_UnLoad.End
